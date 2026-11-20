@@ -5,7 +5,7 @@ description: Cómo aplicar la marca de The Hero Camp a presentaciones de formaci
 
 # Presentaciones y materiales · The Hero Camp
 
-Usa siempre la skill `thc-marca` para colores, tipografías, logos, doodles y fotos. Esta skill dice cómo se combinan en una presentación y en otros materiales.
+Usa siempre la skill `thc-marca`: color de texto por fondo, pesos, botones, doodles y fotos. Aquí solo cambian los formatos y los tamaños. Esta skill dice cómo se combinan en una presentación y en otros materiales.
 
 ## Presentaciones de formación (16:9, 1920 × 1080)
 
@@ -38,7 +38,7 @@ Si la herramienta tiene su propio formato de presentación (Google Slides, Power
 - **Fichas de ejercicio y plantillas para alumnos** (A4 o pantalla): fondo blanco, cabecera con "EJERCICIO:" manuscrito en verde oscuro y título en DM Sans, campos con líneas finas gris claro y etiquetas en DM Sans SemiBold mayúsculas pequeñas. Logo verde oscuro pequeño abajo.
 - **Documentos y propuestas**: fondo blanco, títulos en DM Sans SemiBold verde oscuro, texto en negro a 11–12 pt, un único acento lima en subrayados o separadores. Portada en verde oscuro con logo blanco.
 - **Posts de una sola imagen**: mismas reglas que un slide de carrusel (ver `thc-carrusel-caso`), 1080 × 1350 o 1080 × 1080.
-- **Emails y landings**: fondo blanco o gris sutil, botón lima con texto verde oscuro y bordes totalmente redondeados.
+- **Webs, landings y emails**: usa la skill `thc-web`.
 
 ## Contenido
 

@@ -1,10 +1,11 @@
 /* The Hero Camp · tokens de color y tipografía */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Permanent+Marker&display=swap");
 
 :root {
   --lima: #98DA01;
   --verde-oscuro: #003133;
   --verde-claro: #EAFFBF;
+  --verde-fondo: #F4FAF1;
   --rosa: #E83B83;
   --amarillo: #FFDA23;
   --negro: #1C2125;
@@ -23,3 +24,8 @@
   font-family: var(--font-mano);
   text-transform: uppercase;
 }
+
+/* Botones: esquinas rectas */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;font:500 16px/20px var(--font-sans);letter-spacing:.01em;border-radius:0;text-decoration:none}
+.btn-principal{background:var(--lima);color:var(--verde-oscuro)}
+.btn-secundario{border:1px solid currentColor;background:transparent}

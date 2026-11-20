@@ -7,6 +7,8 @@ description: Crea un carrusel de LinkedIn/Instagram (y el texto del post) contan
 
 Un carrusel por sesión de formación in-company. Usa siempre la skill `thc-marca` para colores, tipografías y logos.
 
+Antes de diseñar, lee entera la skill `thc-marca`: color de texto por fondo, pesos, botones, doodles y fotos. Este carrusel solo cambia los tamaños.
+
 Cada carrusel tiene que conseguir dos cosas:
 
 - Que se vea que la sesión fue útil de verdad: qué problema tenía el equipo y qué se llevaron.
@@ -52,7 +54,7 @@ Entre 6 y 8 slides, vertical 4:5 (1080 × 1350 px). Fondos alternos: verde oscur
 | Con qué se fueron | Cerrar el caso | Foto de la sesión a sangre arriba; debajo, sobre verde oscuro, titular y una frase concreta de lo que hicieron. |
 | CTA | Que escriban | Siempre igual (abajo). |
 
-**CTA fijo.** Fondo verde oscuro. Logo lima grande, cortado por la esquina superior derecha y algo girado. Manuscrito "FORMACIÓN IN-COMPANY PARA EQUIPOS DE PRODUCTO". Una pregunta que conecte con el reto del caso, con una palabra en lima. Debajo: "Lo trabajamos con tu equipo, sobre tu producto.", un botón lima "Habla con nosotros →" y `theherocamp.com/empresas`.
+**CTA fijo.** Fondo verde oscuro. Logo lima grande, cortado por la esquina superior derecha y algo girado. Manuscrito "FORMACIÓN IN-COMPANY PARA EQUIPOS DE PRODUCTO". Una pregunta que conecte con el reto del caso, con una palabra en lima. Debajo: "Lo trabajamos con tu equipo, sobre tu producto.", un botón lima rectangular (sin redondeo) "Habla con nosotros →" y `theherocamp.com/empresas`.
 
 ## 4. Cómo son los slides
 
