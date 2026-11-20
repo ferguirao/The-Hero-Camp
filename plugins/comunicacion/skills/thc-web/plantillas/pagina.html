@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plantilla · página THC</title>
+<style>
+/* The Hero Camp · tokens (variante v2 de la portada web) */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Permanent+Marker&display=swap");
+
+:root {
+  --ink: #003133;          /* verde oscuro: texto, bordes, fondos oscuros */
+  --ink2: #0B4648;
+  --lime: #98DA01;         /* acción, subrayado, sombras de acento */
+  --pink: #E83B83;         /* manuscrito sobre claro, foco */
+  --yellow: #FFDA23;       /* pegatinas, aviso, manuscrito sobre oscuro */
+  --paper: #F4F6F5;        /* fondo por defecto */
+  --pale: #EAFFBF;         /* fondo de realce */
+  --gris: #486461;         /* secundario sobre claro */
+  --cuerpo: #19494B;       /* párrafo sobre claro */
+  --linea: #C9D6D3;        /* líneas finas sobre claro */
+  --sobre-oscuro: #C5D8D5; /* secundario sobre verde oscuro */
+  --rotulo-oscuro: #9FBAB6;
+  --sombra: 5px 5px 0 var(--ink);
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-mano: "Permanent Marker", cursive;
+}
+
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); font-size: 18px; line-height: 1.55; }
+h1, h2, h3 { margin: 0; font-weight: 700; text-wrap: balance; }
+h1 { font-size: clamp(42px, 5.4vw, 80px); line-height: 1.04; letter-spacing: -.045em; }
+h2 { font-size: clamp(30px, 3.5vw, 50px); line-height: 1.08; letter-spacing: -.04em; }
+h3 { font-size: 24px; line-height: 1.15; letter-spacing: -.03em; }
+.entradilla { font-size: 20px; line-height: 1.5; color: var(--cuerpo); max-width: 44ch; }
+
+.wrap { width: min(1240px, 100% - 64px); margin-inline: auto; }
+.seccion { padding-block: clamp(64px, 8.5vw, 120px); }
+.oscura { background: var(--ink); color: #fff; }
+.oscura .entradilla, .oscura p { color: var(--sobre-oscuro); }
+.blanca { background: #fff; }
+
+.eyebrow { display: block; font-family: var(--font-mano); font-size: 19px; color: var(--pink); margin-bottom: 10px; }
+.oscura .eyebrow { color: var(--yellow); }
+
+.marca { background: linear-gradient(transparent 62%, var(--lime) 62% 92%, transparent 92%); margin-inline: -.06em; padding-inline: .06em; }
+.oscura .marca { color: var(--lime); background: none; }
+
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 13px 22px; font: 700 17px/1.2 var(--font-sans);
+  background: var(--lime); color: var(--ink); border: 2px solid var(--ink); box-shadow: 4px 4px 0 var(--ink);
+  border-radius: 0; text-decoration: none; white-space: nowrap; transition: transform .15s, box-shadow .15s; }
+.btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+.btn:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--ink); }
+.btn-claro { background: #fff; }
+.btn-oscuro { background: var(--ink); color: #fff; box-shadow: 4px 4px 0 var(--lime); }
+.oscura .btn { box-shadow: 4px 4px 0 #fff; }
+
+.enlace { color: inherit; font-weight: 700; text-decoration: underline 3px var(--lime); text-underline-offset: 5px; }
+.enlace:hover { text-decoration-color: var(--pink); }
+
+.tarjeta { background: #fff; border: 2px solid var(--ink); box-shadow: var(--sombra); }
+.tarjeta-destacada { box-shadow: 5px 5px 0 var(--lime); }
+
+.pegatina { display: inline-block; background: var(--yellow); color: var(--ink); border: 1.5px solid var(--ink); box-shadow: 2px 2px 0 var(--ink);
+  font: 14px/1 var(--font-mano); padding: 5px 11px; transform: rotate(4deg); }
+.etiqueta { background: #fff; border: 2px solid var(--ink); padding: 2px 9px; font-size: 13px; font-weight: 500; }
+.dato { background: var(--paper); border: 1px solid var(--linea); padding: 3px 8px; font-size: 12.5px; }
+
+/* ---- Componentes de página ---- */
+*{box-sizing:border-box}
+a{color:inherit}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none;font-size:13px;font-weight:500;line-height:1.05}
+.logo b{font-size:17px;font-weight:700}
+.aviso{background:var(--yellow);border-bottom:2px solid var(--ink);text-align:center;font-size:14px;font-weight:600;padding:9px 16px}
+.cabecera{background:#fff;border-bottom:2px solid var(--ink);height:72px}
+.cabecera .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.cabecera nav{display:flex;align-items:center;gap:28px;font-size:15.5px;font-weight:500}
+.cabecera nav a{text-decoration:none}
+.cabecera nav a:not(.btn):hover{text-decoration:underline 3px var(--lime);text-underline-offset:6px}
+.cabecera .btn{box-shadow:3px 3px 0 var(--ink);padding:10px 18px;font-size:15.5px}
+.hero{border-bottom:2px solid var(--ink);padding-block:clamp(48px,6vw,88px)}
+.hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(32px,5vw,72px);align-items:center}
+.novedad{display:inline-flex;align-items:center;gap:10px;background:#fff;border:2px solid var(--ink);padding:4px 12px 4px 4px;font-size:14px;font-weight:500;text-decoration:none;margin-bottom:24px}
+.novedad span{background:var(--ink);color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em;padding:3px 8px}
+.hero .entradilla{margin:22px 0 32px}
+.botones{display:flex;gap:14px;flex-wrap:wrap}
+.pruebas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;padding-top:20px;border-top:1px solid var(--linea)}
+.pruebas b{display:block;font-size:26px;letter-spacing:-.04em}
+.pruebas span{font-size:14px;color:var(--gris);line-height:1.4}
+.muro{background:var(--ink);border:2px solid var(--ink);box-shadow:var(--sombra);display:grid;grid-template-columns:repeat(3,1fr);gap:2px;height:520px;overflow:hidden}
+.muro figure{margin:0;background:#3c5f60;position:relative;min-height:160px}
+.muro figcaption{position:absolute;left:0;right:0;bottom:0;background:var(--ink);color:#fff;font-size:12.5px;padding:6px 10px;line-height:1.3}
+.muro figcaption b{display:block;font-size:14px}
+.logos{background:#fff;padding-block:28px}
+.logos .wrap{display:flex;align-items:center;gap:40px;flex-wrap:wrap}
+.rotulo{font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gris)}
+.oscura .rotulo{color:var(--rotulo-oscuro)}
+.logos i{font-style:normal;font-weight:700;font-size:20px;color:var(--gris)}
+.cab-seccion{display:grid;grid-template-columns:1.25fr 1fr;gap:24px 64px;align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.cab-seccion p{margin:0;color:var(--gris);max-width:46ch}
+.oscura .cab-seccion p{color:var(--sobre-oscuro)}
+.rejilla{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.programa{background:#fff;color:var(--ink);border:2px solid var(--ink);box-shadow:5px 5px 0 var(--lime);display:flex;flex-direction:column}
+.programa .img{aspect-ratio:16/10;background:#9fb4b1;border-bottom:2px solid var(--ink);position:relative}
+.programa .img .etiqueta{position:absolute;left:12px;top:12px}
+.programa .img .pegatina{position:absolute;right:12px;top:-12px}
+.programa .cuerpo{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.programa h3{font-size:22px}
+.programa p{margin:0;font-size:16px;color:var(--cuerpo);line-height:1.45}
+.datos{display:flex;gap:6px;flex-wrap:wrap}
+.plazas{font-family:var(--font-mano);color:var(--pink);font-size:15px}
+.programa .pie-tarjeta{margin-top:auto;border-top:1px solid var(--linea);padding-top:14px;display:flex;justify-content:space-between;align-items:end}
+.programa s{display:block;color:var(--gris);font-size:14px}
+.programa .precio{font-size:26px;font-weight:700;letter-spacing:-.04em;line-height:1}
+.programa .ver{font-size:15px;font-weight:700;text-decoration:none}
+.pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.paso{padding:22px;display:flex;flex-direction:column;gap:12px}
+.paso .num{font-size:54px;font-weight:900;line-height:1;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:2px var(--ink);transition:color .2s}
+.paso:hover .num{color:var(--lime)}
+.paso p{margin:0;font-size:16px;color:var(--cuerpo)}
+.paso .img{aspect-ratio:4/3;background:#b9c9c6;border:2px solid var(--ink);margin-top:auto}
+.cifras{background:var(--lime);border-block:2px solid var(--ink)}
+.cifras dl{margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.cifras div{padding:32px 24px;border-left:2px solid var(--ink)}
+.cifras div:first-child{border-left:0}
+.cifras dd{margin:0;font-size:clamp(40px,4.6vw,64px);font-weight:700;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums}
+.cifras dt{font-size:16px;font-weight:500;margin-top:8px}
+.faq{border-top:2px solid var(--ink);max-width:880px}
+.faq details{border-bottom:2px solid var(--ink)}
+.faq details[open]{background:var(--pale)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 16px;font-size:20px;font-weight:600}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:30px;height:30px;border:2px solid var(--ink);display:grid;place-items:center;font-weight:700;background:#fff}
+.faq details[open] summary::after{content:"–";background:var(--lime)}
+.faq details p{margin:0;padding:0 16px 20px;color:var(--cuerpo);max-width:64ch}
+.contacto{background:var(--pale);border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:clamp(28px,4vw,56px);display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.contacto .entradilla{margin:16px 0 0}
+.contacto-links{display:grid;gap:14px}
+.contacto-links a:not(.btn){background:#fff;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);padding:14px 18px;text-decoration:none;font-weight:700}
+.contacto-links a small{display:block;font-weight:400;color:var(--gris);font-size:14px}
+.pie-web{background:var(--ink);color:#fff;padding-top:clamp(56px,7vw,96px);overflow:hidden}
+.pie-web .lema{font-size:clamp(34px,4.4vw,62px);font-weight:700;letter-spacing:-.045em;line-height:1.05;max-width:16ch;margin:0}
+.pie-web .lema span{color:var(--lime)}
+.pie-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-top:56px}
+.boletin label{font-family:var(--font-mano);color:var(--yellow);font-size:18px;display:block;margin-bottom:10px}
+.boletin .campo{display:flex;background:#fff;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--lime)}
+.boletin input{flex:1;border:0;padding:12px 14px;font:16px var(--font-sans);min-width:0}
+.boletin button{border:0;border-left:2px solid var(--ink);background:var(--lime);color:var(--ink);font:700 16px var(--font-sans);padding:0 18px;cursor:pointer}
+.pie-web h4{margin:0 0 14px}
+.pie-web ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:15.5px}
+.pie-web ul a{text-decoration:none}
+.pie-web ul a:hover{text-decoration:underline 2px var(--lime);text-underline-offset:4px}
+.redes{display:flex;gap:10px;margin-top:20px}
+.redes a{width:42px;height:42px;border:2px solid #fff;display:grid;place-items:center;text-decoration:none;font-weight:700;font-size:14px}
+.rotulo-gigante{font-size:clamp(64px,13vw,200px);font-weight:900;letter-spacing:-.06em;color:#ffffff14;line-height:.8;margin-top:48px;white-space:nowrap}
+.franja{background:var(--lime);color:var(--ink);font-size:14px;font-weight:500;padding:12px 0}
+.franja .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:860px){
+  .wrap{width:calc(100% - 36px)}
+  .cabecera nav a:not(.btn){display:none}
+  .hero .wrap,.cab-seccion,.contacto,.pie-grid{grid-template-columns:1fr}
+  .rejilla,.pasos{grid-template-columns:1fr}
+  .cifras dl{grid-template-columns:1fr 1fr}
+  .cifras div:nth-child(3){border-left:0}
+  .cifras div:nth-child(n+3){border-top:2px solid var(--ink)}
+  .muro{height:340px}
+}
+</style>
+</head>
+<body>
+
+<div class="aviso">[Aviso corto de campaña o convocatoria] · <a class="enlace" href="#">[Ver más]</a></div>
+
+<header class="cabecera"><div class="wrap">
+  <a class="logo" href="#" aria-label="The Hero Camp, inicio"><svg viewBox="0 0 40.778 25.486" width="42" aria-hidden="true"><path fill="currentColor" d="M 40.401 14.755 L 33.47 1.955 C 32.831 0.776 31.592 0.028 30.238 0.001 C 30.214 0.001 30.189 0.001 30.165 0.001 C 28.839 0.001 27.606 0.696 26.933 1.829 L 20.388 12.861 L 13.843 1.829 C 13.157 0.675 11.888 -0.027 10.538 0.001 C 9.184 0.026 7.947 0.774 7.308 1.953 L 0.375 14.755 C -0.189 15.797 -0.112 17.064 0.575 18.031 L 4.921 24.15 C 5.515 24.986 6.486 25.486 7.521 25.486 L 33.257 25.486 C 34.292 25.486 35.263 24.988 35.857 24.15 L 40.203 18.031 C 40.891 17.064 40.967 15.797 40.403 14.755 Z M 9.171 19.218 L 6.895 16.011 L 10.713 8.961 L 16.798 19.218 Z M 31.603 19.218 L 23.976 19.218 L 30.061 8.961 L 33.879 16.011 Z"/></svg><span>The Hero<br><b>Camp</b></span></a>
+  <nav><a href="#">Programas</a><a href="#">Empresas</a><a href="#">Método</a><a href="#">Comunidad</a><a class="btn" href="#">[Acción]</a></nav>
+</div></header>
+
+<!-- HERO · papel -->
+<section class="hero"><div class="wrap">
+  <div>
+    <a class="novedad" href="#"><span>NEW</span>[Novedad en una línea] →</a>
+    <h1>[Titular de una o dos líneas con <span class="marca">palabras clave</span>]</h1>
+    <p class="entradilla">[Entradilla: qué ofreces, a quién y por qué ahora, en una o dos frases.]</p>
+    <div class="botones"><a class="btn" href="#">[Acción principal] →</a><a class="btn btn-claro" href="#">[Secundaria] ↓</a></div>
+    <div class="pruebas">
+      <div><b>[+3.000]</b><span>[alumnos formados]</span></div>
+      <div><b>[4,8/5]</b><span>[valoración media]</span></div>
+      <div><b>[+150]</b><span>[empresas]</span></div>
+    </div>
+  </div>
+  <div class="muro" aria-label="Profesores y alumnos">
+    <figure><figcaption><b>[Nombre]</b>[Empresa]</figcaption></figure>
+    <figure><figcaption><b>[Nombre]</b>[Empresa]</figcaption></figure>
+    <figure><figcaption><b>[Nombre]</b>[Empresa]</figcaption></figure>
+    <figure><figcaption><b>[Nombre]</b>[Empresa]</figcaption></figure>
+    <figure><figcaption><b>[Nombre]</b>[Empresa]</figcaption></figure>
+    <figure><figcaption><b>[Nombre]</b>[Empresa]</figcaption></figure>
+  </div>
+</div></section>
+
+<!-- LOGOS · blanco -->
+<section class="logos"><div class="wrap">
+  <span class="rotulo">Han confiado en nosotros</span>
+  <i>[Logo]</i><i>[Logo]</i><i>[Logo]</i><i>[Logo]</i><i>[Logo]</i>
+</div></section>
+
+<!-- OFERTA · oscura -->
+<section class="seccion oscura"><div class="wrap">
+  <div class="cab-seccion">
+    <div><span class="eyebrow">Formaciones</span><h2>[Titular de sección con <span class="marca">una idea</span>]</h2></div>
+    <p>[Entradilla de sección en una o dos líneas.]</p>
+  </div>
+  <div class="rejilla">
+    <article class="programa">
+      <div class="img"><span class="etiqueta">[12 feb]</span><span class="pegatina">Nueva edición</span></div>
+      <div class="cuerpo">
+        <h3>[Nombre del programa]</h3>
+        <p>[Una línea sobre qué vas a saber hacer al acabar.]</p>
+        <div class="datos"><span class="dato">[70 horas]</span><span class="dato">[Online en directo]</span></div>
+        <span class="plazas">[Quedan 8 plazas]</span>
+        <div class="pie-tarjeta"><div><s>[1.990 €]</s><span class="precio">[1.490 €]</span></div><a class="ver" href="#">Ver programa →</a></div>
+      </div>
+    </article>
+    <article class="programa">
+      <div class="img"><span class="etiqueta">[3 mar]</span></div>
+      <div class="cuerpo">
+        <h3>[Nombre del programa]</h3>
+        <p>[Una línea sobre qué vas a saber hacer al acabar.]</p>
+        <div class="datos"><span class="dato">[40 horas]</span><span class="dato">[Certificación]</span></div>
+        <div class="pie-tarjeta"><div><span class="precio">[990 €]</span></div><a class="ver" href="#">Ver programa →</a></div>
+      </div>
+    </article>
+    <article class="programa">
+      <div class="img"><span class="etiqueta">[21 abr]</span></div>
+      <div class="cuerpo">
+        <h3>[Nombre del programa]</h3>
+        <p>[Una línea sobre qué vas a saber hacer al acabar.]</p>
+        <div class="datos"><span class="dato">[60 horas]</span><span class="dato">[Mentoría 1:1]</span></div>
+        <div class="pie-tarjeta"><div><span class="precio">[1.290 €]</span></div><a class="ver" href="#">Ver programa →</a></div>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<!-- MÉTODO · papel -->
+<section class="seccion"><div class="wrap">
+  <div class="cab-seccion">
+    <div><span class="eyebrow">Nuestro método</span><h2>[Cómo se aprende <span class="marca">aquí</span>]</h2></div>
+    <p>[Entradilla de sección.]</p>
+  </div>
+  <div class="pasos">
+    <div class="tarjeta paso"><span class="num">01</span><h3>[Paso]</h3><p>[Dos líneas concretas.]</p><div class="img"></div></div>
+    <div class="tarjeta paso"><span class="num">02</span><h3>[Paso]</h3><p>[Dos líneas concretas.]</p><div class="img"></div></div>
+    <div class="tarjeta paso"><span class="num">03</span><h3>[Paso]</h3><p>[Dos líneas concretas.]</p><div class="img"></div></div>
+  </div>
+</div></section>
+
+<!-- CIFRAS · lima -->
+<section class="cifras"><dl class="wrap">
+  <div><dd>[3.000+]</dd><dt>[alumnos]</dt></div>
+  <div><dd>[150]</dd><dt>[empresas]</dt></div>
+  <div><dd>[4,8]</dd><dt>[valoración media]</dt></div>
+  <div><dd>[60]</dd><dt>[profesores en activo]</dt></div>
+</dl></section>
+
+<!-- FAQ · blanca -->
+<section class="seccion blanca"><div class="wrap">
+  <div class="cab-seccion"><div><span class="eyebrow">Dudas</span><h2>Preguntas frecuentes</h2></div></div>
+  <div class="faq">
+    <details open><summary>[Pregunta concreta]</summary><p>[Respuesta corta y directa.]</p></details>
+    <details><summary>[Pregunta concreta]</summary><p>[Respuesta.]</p></details>
+    <details><summary>[Pregunta concreta]</summary><p>[Respuesta.]</p></details>
+  </div>
+</div></section>
+
+<!-- CONTACTO · papel con caja verde claro -->
+<section class="seccion"><div class="wrap">
+  <div class="contacto">
+    <div><span class="eyebrow">Hablemos</span><h2>[Titular de cierre con <span class="marca">acción</span>]</h2><p class="entradilla">[Qué pasa cuando escribes.]</p></div>
+    <div class="contacto-links">
+      <a href="#">[email@theherocamp.com]<small>[Respondemos en 24 h]</small></a>
+      <a href="#">[Teléfono]<small>[Horario]</small></a>
+      <a class="btn btn-oscuro" href="#">[Pedir información] →</a>
+    </div>
+  </div>
+</div></section>
+
+<!-- FOOTER · oscuro -->
+<footer class="pie-web">
+  <div class="wrap">
+    <p class="lema">[Lema de cierre con <span>una palabra</span> en lima]</p>
+    <div class="pie-grid">
+      <form class="boletin" onsubmit="return false"><label for="b">[Apúntate al boletín]</label><div class="campo"><input id="b" type="email" placeholder="tu@email.com"><button>Apuntarme</button></div>
+        <div class="redes"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="YouTube">yt</a></div></form>
+      <div><h4 class="rotulo">Programas</h4><ul><li><a href="#">[Enlace]</a></li><li><a href="#">[Enlace]</a></li><li><a href="#">[Enlace]</a></li></ul></div>
+      <div><h4 class="rotulo">Empresas</h4><ul><li><a href="#">[Enlace]</a></li><li><a href="#">[Enlace]</a></li></ul></div>
+      <div><h4 class="rotulo">The Hero Camp</h4><ul><li><a href="#">[Enlace]</a></li><li><a href="#">[Enlace]</a></li></ul></div>
+    </div>
+    <div class="rotulo-gigante" aria-hidden="true">The Hero Camp</div>
+  </div>
+  <div class="franja"><div class="wrap"><span>© The Hero Camp</span><span>[Legal · Privacidad · Cookies]</span></div></div>
+</footer>
+
+</body>
+</html>

@@ -5,7 +5,7 @@ description: Cómo aplicar la marca de The Hero Camp a presentaciones de formaci
 
 # Presentaciones y materiales · The Hero Camp
 
-Usa siempre la skill `thc-marca`: color de texto por fondo, pesos, botones, doodles y fotos. Aquí solo cambian los formatos y los tamaños. Esta skill dice cómo se combinan en una presentación y en otros materiales.
+Usa siempre la skill `thc-marca`: colores por fondo, pesos, bordes, sombras y botones. Aquí solo cambian los formatos y los tamaños. Esta skill dice cómo se combinan en una presentación y en otros materiales.
 
 ## Presentaciones de formación (16:9, 1920 × 1080)
 

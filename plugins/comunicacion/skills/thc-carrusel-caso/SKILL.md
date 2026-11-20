@@ -7,7 +7,7 @@ description: Crea un carrusel de LinkedIn/Instagram (y el texto del post) contan
 
 Un carrusel por sesión de formación in-company. Usa siempre la skill `thc-marca` para colores, tipografías y logos.
 
-Antes de diseñar, lee entera la skill `thc-marca`: color de texto por fondo, pesos, botones, doodles y fotos. Este carrusel solo cambia los tamaños.
+Antes de diseñar, lee entera la skill `thc-marca`: colores por fondo, pesos, bordes, sombras y botones. Este carrusel solo cambia los tamaños.
 
 Cada carrusel tiene que conseguir dos cosas:
 
