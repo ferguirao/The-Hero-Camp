@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Plantilla · carrusel de caso in-company THC</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Permanent+Marker&display=swap">
+<!--
+  Plantilla de carrusel 4:5 (1080 × 1350) de The Hero Camp.
+  Cada <section class="slide"> es un slide. Cambia el contenido entre [CORCHETES] y las imágenes;
+  mantén la estructura visual. Exporta cada slide a PNG (captura a 1080 × 1350).
+-->
+<style>
+:root{--lima:#98DA01;--verde-oscuro:#003133;--verde-claro:#EAFFBF;--rosa:#E83B83;--amarillo:#FFDA23;--negro:#1C2125;--gris-oscuro:#5C7069;--gris-claro:#C7D1CE;--blanco:#FFFFFF}
+body{margin:0;background:#ddd;display:flex;flex-direction:column;align-items:center;gap:40px;padding:40px 0;font-family:"DM Sans",sans-serif}
+.slide{position:relative;width:1080px;height:1350px;box-sizing:border-box;padding:80px;overflow:hidden;flex:none}
+.mano{font-family:"Permanent Marker",cursive;text-transform:uppercase;font-weight:400;margin:0;font-size:34px}
+h1{margin:0;font-weight:600;line-height:1;letter-spacing:-3px;font-size:88px}
+.apoyo{margin:28px 0 0;font-size:32px;line-height:1.35;max-width:860px}
+.logo{display:block}
+.foto{position:absolute;width:300px;height:392px;background:#fff;padding:14px;box-sizing:border-box;box-shadow:0 12px 28px rgba(0,0,0,.4)}
+.foto img,.foto .hueco{display:block;width:100%;height:100%;object-fit:cover;background:var(--gris-claro)}
+.cinta{position:absolute;width:120px;height:34px;background:rgba(255,218,35,.85)}
+.postit{box-sizing:border-box;padding:18px 22px;box-shadow:0 6px 12px rgba(0,49,51,.18);display:flex;flex-direction:column;gap:8px}
+.postit b{font-size:20px;font-weight:600;letter-spacing:2px;opacity:.65}
+.postit span{font-family:"Permanent Marker",cursive;text-transform:uppercase;font-size:28px;line-height:1.15}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><symbol id="thc-logo" viewBox="0 0 279 301"><path d="M0 208.828H21.6045V190.594H43.8803V208.828H65.4849V160.211H43.8803V176.42H21.6045V160.211H0V208.828Z" fill="currentColor"/><path d="M186.251 210.181C190.981 210.181 197.188 208.694 200.017 206.607L197.188 198.301C196.444 198.91 194.823 199.313 193.811 199.313C191.787 199.313 190.506 198.642 189.494 197.423L186.117 193.301C184.971 191.885 183.618 190.801 182.275 190.47V190.408C191.188 188.445 196.176 183.383 196.176 176.089C196.176 165.893 188.544 160.221 174.778 160.221H132.044V208.838H153.648V193.983H159.38C162.685 193.983 165.731 195.067 167.889 197.826L170.389 201.069C173.631 205.315 177.752 210.181 186.251 210.181ZM153.648 182.495V172.37H167.817C172.134 172.37 174.571 174.199 174.571 177.432C174.571 180.666 172.144 182.495 167.755 182.495H153.648Z" fill="currentColor"/><path d="M72.652 236.06H125.982V223.229H93.5749V216.814H122.605V206.008H93.5749V200.264H125.3V187.433H72.652V236.05V236.06Z" fill="currentColor"/><path d="M242.555 237.744C264.563 237.744 279.01 227.475 279.01 211.741C279.01 196.007 264.563 185.739 242.555 185.739C220.548 185.739 206.1 196.007 206.1 211.741C206.1 227.475 220.538 237.744 242.555 237.744ZM242.555 222.888C233.571 222.888 227.705 218.498 227.705 211.741C227.705 204.985 233.571 200.594 242.555 200.594C251.54 200.594 257.406 204.985 257.406 211.741C257.406 218.498 251.53 222.888 242.555 222.888Z" fill="currentColor"/><path d="M33.8835 278.582C49.4053 278.582 61.3539 271.423 64.5967 260.141L55.8908 258.117C53.4639 266.154 45.0266 271.278 34.0178 271.278C19.508 271.278 10.2549 264.191 10.2549 253.116C10.2549 242.042 18.6922 234.955 31.9214 234.955C41.505 234.955 49.0026 239.48 51.2952 246.639L59.7945 244.139C56.2833 234.077 45.3467 227.661 31.7148 227.661C12.816 227.661 0.867432 237.589 0.867432 253.116C0.867432 268.644 13.6938 278.582 33.8732 278.582H33.8835Z" fill="currentColor"/><path d="M66.373 297.932H76.1632L81.6367 287.467H111.606L117.069 297.932H126.932L102.219 250.059H91.2823L66.373 297.932ZM84.394 280.917L96.6111 256.877H96.7454L108.901 280.917H84.394Z" fill="currentColor"/><path d="M131.92 277.063H140.966V238.984H141.101L161.9 277.063H171.277L191.942 238.984H192.076V277.063H201.122V229.19H187.966L166.568 268.623H166.495L144.963 229.19H131.94V277.063H131.92Z" fill="currentColor"/><path d="M215.653 301H225.03V284.45H250.342C262.559 284.45 269.375 278.706 269.447 268.923C269.447 258.922 262.631 253.116 250.414 253.116H215.653V300.99V301ZM225.03 277.973V259.677H248.049C255.743 259.677 260.06 263.055 260.06 268.861C260.06 274.667 255.743 277.973 248.049 277.973H225.03Z" fill="currentColor"/><path d="M236.566 72.533L202.95 9.6077C199.852 3.81209 193.842 0.1343 187.274 -1.57533e-06C187.16 -1.57533e-06 187.036 -1.57533e-06 186.923 -1.57533e-06C180.489 -1.57533e-06 174.509 3.41951 171.246 8.98785L139.5 63.2249L107.754 8.98785C104.429 3.31621 98.2738 -0.134303 91.7264 -1.57533e-06C85.1583 0.123969 79.1581 3.80176 76.06 9.59737L42.4346 72.533C39.6979 77.6571 40.0696 83.8866 43.4053 88.6388L64.4832 118.722C67.3645 122.834 72.0737 125.293 77.0927 125.293H201.918C206.937 125.293 211.646 122.844 214.527 118.722L235.605 88.6388C238.941 83.8866 239.313 77.6571 236.576 72.533H236.566ZM85.0963 94.4757L74.0565 78.7108L92.5732 44.0508L122.088 94.4757H85.0963ZM193.894 94.4757H156.901L186.417 44.0508L204.933 78.7108L193.894 94.4757Z" fill="currentColor"/></symbol></svg>
+
+<!-- 1 · PORTADA -->
+<section class="slide" style="background:var(--verde-oscuro)">
+  <div style="display:flex;align-items:center;gap:36px;height:120px">
+    <div style="width:280px;height:80px;border:3px dashed var(--gris-claro);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--gris-claro);font-size:22px;font-weight:600">[LOGO CLIENTE, BLANCO]</div>
+    <span style="font-size:48px;color:var(--lima)">×</span>
+    <svg class="logo" width="102" height="110" style="color:#fff"><use href="#thc-logo"/></svg>
+  </div>
+  <div style="position:absolute;left:80px;right:80px;top:280px;height:560px">
+    <div class="foto" style="left:10px;top:60px;transform:rotate(-5deg)"><div class="hueco"></div></div>
+    <div class="cinta" style="left:100px;top:44px;transform:rotate(-8deg)"></div>
+    <div class="foto" style="left:310px;top:0;transform:rotate(3deg)"><div class="hueco"></div></div>
+    <div class="cinta" style="left:400px;top:-16px;transform:rotate(5deg)"></div>
+    <div class="foto" style="left:610px;top:90px;transform:rotate(-2deg)"><div class="hueco"></div></div>
+    <div class="cinta" style="left:700px;top:72px;transform:rotate(-4deg)"></div>
+  </div>
+  <div style="position:absolute;left:80px;right:80px;bottom:80px;display:flex;flex-direction:column;gap:16px">
+    <p class="mano" style="color:var(--lima)">Sesión de formación in-company:</p>
+    <h1 style="color:#fff;font-size:80px">[TEMA DE LA SESIÓN]</h1>
+  </div>
+</section>
+
+<!-- 2 · EL RETO (rosa, elementos del cliente) -->
+<section class="slide" style="background:var(--rosa);display:flex;flex-direction:column;justify-content:space-between">
+  <p class="mano" style="color:#fff">El reto:</p>
+  <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;width:780px;align-self:center">
+    <div style="height:220px;border-radius:28px;background:#fff;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#E83B83" stroke-width="5" stroke-linecap="round"><circle cx="32" cy="32" r="24"/><path d="M32 18v15l10 6"/></svg>
+      <span style="font-size:34px;font-weight:600;color:var(--rosa)">[Producto 1]</span>
+    </div>
+    <div style="height:220px;border-radius:28px;border:5px solid rgba(255,255,255,.5);padding:24px;box-sizing:border-box;display:flex;align-items:flex-end"><span style="font-size:34px;font-weight:600;color:rgba(255,255,255,.8)">[Producto 2]</span></div>
+    <div style="height:220px;border-radius:28px;border:5px solid rgba(255,255,255,.5);padding:24px;box-sizing:border-box;display:flex;align-items:flex-end"><span style="font-size:34px;font-weight:600;color:rgba(255,255,255,.8)">[Producto 3]</span></div>
+    <div style="height:220px;border-radius:28px;border:5px solid rgba(255,255,255,.5);padding:24px;box-sizing:border-box;display:flex;align-items:flex-end"><span style="font-size:34px;font-weight:600;color:rgba(255,255,255,.8)">[Producto 4]</span></div>
+    <div style="height:220px;border-radius:28px;border:5px solid rgba(255,255,255,.5);padding:24px;box-sizing:border-box;display:flex;align-items:flex-end"><span style="font-size:34px;font-weight:600;color:rgba(255,255,255,.8)">[Producto 5]</span></div>
+    <div style="height:220px;border-radius:28px;border:5px dashed rgba(255,255,255,.5);display:flex;align-items:center;justify-content:center"><span style="font-size:34px;font-weight:600;color:rgba(255,255,255,.8)">y más…</span></div>
+  </div>
+  <h1 style="color:#fff;font-size:84px">[El reto del equipo en una frase]</h1>
+</section>
+
+<!-- 3 · IDEA CLAVE CON METÁFORA (ejemplo: puente) -->
+<section class="slide" style="background:#fff">
+  <p class="mano" style="color:var(--verde-oscuro)">[Frase manuscrita]:</p>
+  <h1 style="margin-top:24px;color:var(--negro)">[La idea clave, con las palabras del formador]</h1>
+  <p class="apoyo" style="color:var(--gris-oscuro)">[Una frase de apoyo]</p>
+  <div style="position:absolute;left:0;right:0;bottom:0;height:560px">
+    <div class="mano" style="position:absolute;left:0;bottom:0;width:250px;height:300px;background:var(--verde-oscuro);border-radius:0 20px 0 0;color:#fff;font-size:30px;text-align:center;padding-top:36px;box-sizing:border-box">[Orilla A]</div>
+    <div class="mano" style="position:absolute;right:0;bottom:0;width:250px;height:300px;background:var(--verde-oscuro);border-radius:20px 0 0 0;color:#fff;font-size:30px;text-align:center;padding-top:36px;box-sizing:border-box">[Orilla B]</div>
+    <svg width="1080" height="560" style="position:absolute;left:0;top:0"><path d="M250 262 C 420 150, 660 150, 830 262" fill="none" stroke="#003133" stroke-width="7" stroke-linecap="round"/><path d="M540 330 C 530 380, 556 420, 540 470 M540 470 L 524 452 M540 470 L 556 452" fill="none" stroke="#E83B83" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="mano" style="position:absolute;left:300px;top:150px;width:150px;height:110px;background:var(--rosa);color:#fff;font-size:28px;display:flex;align-items:center;justify-content:center;transform:rotate(-14deg)">[Paso 1]</div>
+    <div class="mano" style="position:absolute;left:465px;top:100px;width:150px;height:110px;background:var(--amarillo);font-size:28px;display:flex;align-items:center;justify-content:center">[Paso 2]</div>
+    <div class="mano" style="position:absolute;left:630px;top:150px;width:150px;height:110px;background:var(--lima);font-size:28px;display:flex;align-items:center;justify-content:center;transform:rotate(13deg)">[Paso 3]</div>
+  </div>
+</section>
+
+<!-- 4 · IDEA CLAVE CON ESQUEMA (ejemplo: roles que dependen unos de otros) -->
+<section class="slide" style="background:var(--verde-oscuro)">
+  <p class="mano" style="color:var(--lima)">[Frase manuscrita]:</p>
+  <h1 style="margin-top:24px;color:#fff">[Titular]</h1>
+  <div style="position:absolute;left:80px;top:520px;width:440px;background:#fff;border-radius:20px;padding:28px 32px;box-sizing:border-box;transform:rotate(-2deg)"><p class="mano" style="font-size:38px;color:var(--verde-oscuro)">[Rol 1]</p><p style="margin:14px 0 0;font-size:30px">[Qué hace]</p></div>
+  <div style="position:absolute;left:330px;top:800px;width:440px;background:#fff;border-radius:20px;padding:28px 32px;box-sizing:border-box;transform:rotate(1.5deg)"><p class="mano" style="font-size:38px;color:var(--verde-oscuro)">[Rol 2]</p><p style="margin:14px 0 0;font-size:30px">[Qué hace]</p></div>
+  <div style="position:absolute;left:560px;top:1060px;width:440px;background:var(--lima);border-radius:20px;padding:28px 32px;box-sizing:border-box;transform:rotate(-1deg)"><p class="mano" style="font-size:38px;color:var(--verde-oscuro)">[Rol 3]</p><p style="margin:14px 0 0;font-size:30px">[… y recibe valor]</p></div>
+  <svg width="1080" height="1350" style="position:absolute;left:0;top:0"><path d="M540 640 C 640 650, 680 700, 650 780 M650 780 L 632 760 M650 780 L 670 764" fill="none" stroke="#98DA01" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M790 920 C 890 930, 930 980, 900 1040 M900 1040 L 882 1020 M900 1040 L 920 1024" fill="none" stroke="#98DA01" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</section>
+
+<!-- 5 · EL EJERCICIO (pizarra con post-its) -->
+<section class="slide" style="background:var(--verde-claro)">
+  <h1 style="color:var(--verde-oscuro)">[Titular del ejercicio]</h1>
+  <p class="apoyo" style="color:var(--verde-oscuro)">[Ejercicio sobre su propio producto. Así quedó la pizarra del grupo X.]</p>
+  <div style="position:absolute;left:70px;top:470px;width:940px;height:800px;background:#fff;border-radius:16px;padding:44px 50px;box-sizing:border-box;transform:rotate(-1.5deg);box-shadow:0 18px 40px rgba(0,49,51,.22);display:flex;flex-direction:column;gap:30px">
+    <p class="mano" style="font-size:40px;color:var(--verde-oscuro)">[Grupo]</p>
+    <div style="display:flex;justify-content:space-between">
+      <div class="postit" style="width:360px;height:168px;background:var(--amarillo);transform:rotate(-2deg)"><b>[ETIQUETA]</b><span>[Post-it]</span></div>
+      <div class="postit" style="width:360px;height:168px;background:var(--amarillo);transform:rotate(1.5deg)"><b>[ETIQUETA]</b><span>[Post-it]</span></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div class="postit" style="width:360px;height:168px;background:var(--rosa);color:#fff;transform:rotate(1deg)"><b>BARRERA</b><span>[Post-it]</span></div>
+      <svg width="80" height="40"><path d="M4 22 C 24 10, 44 30, 70 18 M70 18 L 56 10 M70 18 L 60 30" fill="none" stroke="#003133" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="postit" style="width:360px;height:168px;background:var(--lima);transform:rotate(-1.5deg)"><b>INICIATIVA</b><span>[Post-it]</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · CON QUÉ SE FUERON (foto a sangre) -->
+<section class="slide" style="background:var(--verde-oscuro);padding:0">
+  <div style="position:absolute;left:0;top:0;width:1080px;height:820px;background:var(--gris-claro);display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--verde-oscuro)">[FOTO DE LA SESIÓN A SANGRE]</div>
+  <div style="position:absolute;left:80px;right:80px;bottom:80px;display:flex;flex-direction:column;gap:22px">
+    <p class="mano" style="color:var(--lima)">Lo que se llevaron:</p>
+    <h1 style="color:#fff;font-size:84px">[Titular]</h1>
+    <p style="margin:0;font-size:32px;line-height:1.35;color:var(--gris-claro)">[Qué hicieron, en concreto]</p>
+  </div>
+</section>
+
+<!-- 7 · CTA (fijo) -->
+<section class="slide" style="background:var(--verde-oscuro)">
+  <svg width="575" height="620" style="position:absolute;right:-90px;top:-30px;transform:rotate(8deg);color:var(--lima)"><use href="#thc-logo"/></svg>
+  <p class="mano" style="position:absolute;left:80px;top:90px;width:523px;line-height:1.2;color:#fff">Formación in-company para equipos de producto</p>
+  <div style="position:absolute;left:80px;right:80px;bottom:80px;display:flex;flex-direction:column;gap:36px">
+    <h1 style="color:#fff;font-size:92px;letter-spacing:-4px">[¿Pregunta que conecta con el reto, con una <span style="color:var(--lima)">palabra</span> en lima?]</h1>
+    <p style="margin:0;font-size:36px;line-height:1.35;color:var(--gris-claro)">Lo trabajamos con tu equipo, sobre tu producto.</p>
+    <span style="align-self:flex-start;display:inline-flex;align-items:center;gap:16px;background:var(--lima);color:var(--verde-oscuro);font-size:38px;font-weight:600;padding:26px 40px;border-radius:999px">Habla con nosotros <svg width="36" height="36" viewBox="0 0 36 36"><path d="M6 18h22M20 9l9 9-9 9" fill="none" stroke="#003133" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <p style="margin:0;font-size:36px;font-weight:600;color:#fff">theherocamp.com/empresas</p>
+  </div>
+</section>
+</body>
+</html>

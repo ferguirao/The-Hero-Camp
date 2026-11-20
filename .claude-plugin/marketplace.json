@@ -1,0 +1,11 @@
+{
+  "name": "the-hero-camp",
+  "owner": { "name": "The Hero Camp" },
+  "plugins": [
+    {
+      "name": "comunicacion",
+      "source": "./plugins/comunicacion",
+      "description": "Marca de The Hero Camp, carruseles de casos in-company y presentaciones."
+    }
+  ]
+}

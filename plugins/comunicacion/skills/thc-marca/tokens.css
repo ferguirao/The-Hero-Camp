@@ -1,0 +1,25 @@
+/* The Hero Camp · tokens de color y tipografía */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Permanent+Marker&display=swap");
+
+:root {
+  --lima: #98DA01;
+  --verde-oscuro: #003133;
+  --verde-claro: #EAFFBF;
+  --rosa: #E83B83;
+  --amarillo: #FFDA23;
+  --negro: #1C2125;
+  --gris-oscuro: #5C7069;
+  --gris-medio: #9DAFA9;
+  --gris-claro: #C7D1CE;
+  --gris-sutil: #F4F6F5;
+  --blanco: #FFFFFF;
+
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-mano: "Permanent Marker", "DM Sans", cursive;
+}
+
+/* Texto manuscrito: siempre en mayúsculas */
+.mano {
+  font-family: var(--font-mano);
+  text-transform: uppercase;
+}
