@@ -1,11 +1,11 @@
 ---
 name: thc-marca
-description: Sistema visual de The Hero Camp con valores exactos (colores por fondo, tipografía y pesos, botones, bordes y sombras, espaciado, componentes, logo). Úsala SIEMPRE antes de diseñar cualquier pieza con la marca THC: web, landing, email, carrusel, presentación, documento o post.
+description: "Sistema visual web de The Hero Camp con valores exactos (colores por fondo, tipografía y pesos, botones, bordes y sombras, espaciado, componentes, logo). Úsala antes de diseñar webs, landings, emails, carruseles y posts con la marca THC; para presentaciones, solo aporta colores y fuentes (el estilo está en thc-presentaciones)."
 ---
 
 # The Hero Camp · sistema visual
 
-Todo lo que hay aquí sale del CSS de la web de referencia (variante v2 de la portada). No es orientativo: usa estos valores tal cual. Lo que hace que algo "parezca THC" son los detalles: bordes de 2 px, sombras sólidas desplazadas, titulares en negrita apretados, el subrayado de rotulador lima y el manuscrito.
+Todo lo que hay aquí sale del CSS de la web de referencia (variante v2 de la portada). No es orientativo: usa estos valores tal cual en webs, landings, emails, carruseles y posts. **En presentaciones solo valen los colores y las fuentes**: bordes de 2 px, sombras sólidas y titulares de 700 apretados no van en slides; el estilo de slides está en `thc-presentaciones` (tema Slidev de Course-Builder). Lo que hace que algo "parezca THC" son los detalles: bordes de 2 px, sombras sólidas desplazadas, titulares en negrita apretados, el subrayado de rotulador lima y el manuscrito.
 
 Las demás skills de THC (`thc-web`, `thc-carrusel-caso`, `thc-presentaciones`) parten de esta. `referencias/si/pagina-v2.png` es una página de ejemplo con todo aplicado (sale de `thc-web/plantillas/pagina.html`).
 
