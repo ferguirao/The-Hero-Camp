@@ -6,10 +6,10 @@ Las skills se agrupan en plugins, uno por área. Hoy hay uno; la idea es que cre
 
 | Plugin | Skill | Para qué |
 | --- | --- | --- |
-| `comunicacion` | `thc-marca` | Sistema visual con valores exactos: color de texto por fondo, pesos, bordes y sombras, botones, espaciado, componentes y logo. Incluye referencias de lo que sí y lo que no. La usan las demás. |
+| `comunicacion` | `thc-marca` | Sistema visual con valores exactos: color de texto por fondo, pesos, bordes y sombras, botones, espaciado, componentes y logo, y qué colores y fuentes se heredan en slides. Incluye referencias de lo que sí y lo que no. La usan las demás. |
 | `comunicacion` | `thc-carrusel-caso` | Carrusel de LinkedIn/Instagram y texto del post contando una formación in-company. Incluye plantilla HTML. |
 | `comunicacion` | `thc-web` | Webs, landings, campañas y emails con la estructura y los componentes de la web real. Incluye una página de ejemplo con todos los componentes. |
-| `comunicacion` | `thc-presentaciones` | Presentaciones de formación 16:9, fichas de ejercicio, documentos y otras piezas con la marca. Incluye plantilla HTML. |
+| `comunicacion` | `thc-presentaciones` | Presentaciones de formación y charlas 16:9 con el tema Slidev de Course-Builder (patrones probados en la charla Voltron), fichas de ejercicio, documentos y otras piezas con la marca. Incluye plantilla HTML para piezas sueltas. |
 
 ## Usarlas en claude.ai
 
