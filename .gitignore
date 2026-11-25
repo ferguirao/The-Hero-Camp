@@ -1,0 +1,6 @@
+.env
+node_modules/
+.slidev/
+dist-slides/
+exportaciones/
+.DS_Store

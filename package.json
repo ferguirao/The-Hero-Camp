@@ -1,0 +1,18 @@
+{
+  "name": "the-hero-camp",
+  "private": true,
+  "type": "module",
+  "description": "Skills de Claude y tema de slides (Slidev) de The Hero Camp",
+  "scripts": {
+    "slides": "slidev",
+    "muestra": "slidev slides/tema/muestra.md",
+    "build": "slidev build",
+    "exportar": "slidev export"
+  },
+  "devDependencies": {
+    "@slidev/cli": "53.0.0",
+    "@slidev/theme-default": "0.25.0",
+    "playwright-chromium": "1.63.0",
+    "slidev-theme-thc": "file:slides/tema"
+  }
+}

@@ -1,19 +1,22 @@
 ---
 name: thc-presentaciones
-description: "Cómo hacer presentaciones de formación y charlas de The Hero Camp (16:9) con el tema Slidev de Course-Builder, y cómo aplicar la marca a materiales de sesión, documentos y otras piezas que no sean webs ni carruseles."
+description: "Cómo hacer presentaciones de formación y charlas de The Hero Camp (16:9) en Slidev con el tema thc (slides/tema del repo The-Hero-Camp): plan, layouts, patrones, garabatos, fotos y revisión. También cómo aplicar la marca a fichas, documentos y piezas sueltas que no sean webs ni carruseles."
 ---
 
 # Presentaciones y materiales · The Hero Camp
 
-Las slides de THC **no** heredan el estilo web de `thc-marca` (bordes de 2 px, sombras sólidas, titulares de 700 apretados): ese estilo es de la web. Las slides siguen el tema de Slidev del repo Course-Builder (`ferguirao/Course-Builder`): `slides/tema/` (layouts y estilos), `compartido/marca/marca.md` (guía de marca de slides) y las skills del repo `elegir-slide`, `maquetacion-thc`, `garabatos-thc`, `imagenes-thc` y `revisar-slides`. De `thc-marca` solo se toman los colores y las fuentes.
+Las slides de THC **no** heredan el estilo web de `thc-marca` (bordes de 2 px, sombras sólidas, titulares de 700 apretados): ese estilo es de la web. Las slides se hacen en Slidev con el tema `thc`, que está en `slides/tema/` del repo `ferguirao/The-Hero-Camp`. De `thc-marca` solo se toman los colores y las fuentes.
 
 ## Presentaciones de formación y charlas (16:9)
 
-**Cómo se hacen:** en Slidev, dentro de Course-Builder, con `theme: thc` (`canvasWidth: 980`). Si el repo no está en la sesión, añádelo antes de maquetar; no reconstruyas el tema a mano en HTML.
+**Cómo se hacen:** en Slidev con `theme: thc`. Si el repo no está en la sesión, añádelo antes de maquetar; no reconstruyas el tema a mano en HTML.
 
-1. Plan slide a slide con `elegir-slide` (forma del contenido, recurso, layout, receta, garabato).
-2. Maqueta con `maquetacion-thc`: layouts del tema (`portada`, `separador`, `mensaje`, `contenido`, `figura`, `caso`, `comparar`, `lado-foto`, `foto-mensaje`, `pregunta`, `cita`, `ponente`…) y la capa de patrones `p-*` de `slides/tema/styles/patrones.css`.
-3. Exporta con `npm run exportar -- <ruta>/slides.md`, revisa hojas de contacto con `revisar-slides` y entrega el PDF.
+1. **Plan slide a slide** antes de maquetar: forma del contenido, recurso narrativo, layout, receta y garabato, con reglas de diversidad. Se aprueba antes de escribir slides. → `referencias/plan.md`
+2. **Montaje:** instalar y arrancar el tema, headmatter, estructura de archivos, slots, clicks, exportar y publicar, trampas técnicas, espacios y saltos de línea. → `referencias/slidev.md`
+3. **Maquetar** con los layouts del tema y la capa de patrones `p-*`: layout por intención, recetas con código, color de texto por fondo, logo y patrones a evitar. → `referencias/layouts.md`
+4. **Garabatos:** dónde van, cuál elegir por significado y cómo se ponen. → `referencias/garabatos.md`
+5. **Fotos:** bibliotecas libres, qué foto según el layout, búsqueda y descarga con `scripts/buscar-imagen.py`, créditos. → `referencias/fotos.md`
+6. **Revisar** los PNG en hojas de contacto antes de entregar. → `referencias/revision.md`
 
 **Charlas (fuera de los cursos):** van en `charlas/<nombre>/` con su propio `slides.md` (solo headmatter + `src:` a `secciones/N-bloque.md`), `style.css` de la charla, `components/` con un `.vue` por cada visual dibujado y `public/img/`. Las imágenes se ponen con `<Im f="archivo.png" />` (respeta la ruta base del build) y los logos de empresa con `<MarcaLogo nombre="…" />` (SVG de `logos/`) o el icono oficial como imagen.
 
@@ -43,14 +46,14 @@ Las slides de THC **no** heredan el estilo web de `thc-marca` (bordes de 2 px, s
 - **Cierre:** foto a sangre con velo degradado desde la izquierda y el texto en blanco encima.
 - **Logos reales siempre** (SVG oficial o icono de la app), no nombres escritos. Nada de fotos de personajes públicos descargadas de la web.
 
-**Cómo se ven** (de `diseno-elegante.md`):
+**Cómo se ven** (resumen; el detalle está en `referencias/layouts.md`):
 
 - Títulos de contenido pequeños y finos (1,5–1,7 rem, peso 400) con negrita solo en la parte clave. Los títulos grandes y en negrita, solo en portada, separadores, mensajes y preguntas.
 - Mucho blanco. Elementos repetidos sobre gris sutil (`#F4F6F5`) con esquinas de 18 px, sin bordes gruesos ni sombras.
-- Jerarquía dentro de cada tarjeta: etiqueta en DM Mono → título en negrita → texto en gris.
+- Jerarquía dentro de cada tarjeta: etiqueta en DM Mono → icono de trazo → título en negrita → texto en gris.
 - Verde claro solo para un elemento activo o un fondo de pregunta; verde oscuro para mensajes y separadores; lima para separadores y cifras.
-- Permanent Marker en kicker de portada, preguntas, citas, callouts, números de paso y anotaciones sobre visuales (máx. 20 % de la slide). Si se cambian las `fonts` del headmatter, incluye `serif: Permanent Marker`, y carga la fuente en local (`@font-face` con el `.woff2`) para que el PDF no la pierda.
-- Imágenes reales (capturas, logos, fotos) por slot (`::foto::`, `::pantalla::`, `::cuerpo::`); visuales dibujados cuando el contenido tiene forma.
+- Permanent Marker en kicker de portada, preguntas, citas, callouts, números de paso y anotaciones sobre visuales (máx. 20 % de la slide).
+- Imágenes reales (capturas, logos, fotos) por slot; visuales dibujados cuando el contenido tiene forma.
 - Historias, citas largas y fuentes de la persona ponente, en las notas del orador.
 
 ### Tipos de slide de la marca (piezas fuera de Slidev)
@@ -77,7 +80,7 @@ Reglas:
 
 `plantillas/presentacion.html` tiene estos tipos maquetados a 1920 × 1080; úsala solo para piezas sueltas, nunca para una presentación completa.
 
-Si piden la presentación en otra herramienta (Google Slides, PowerPoint, un tipo de artifact de slides), aplica allí el estilo de Course-Builder descrito arriba (títulos finos, tarjetas grises, mucho blanco), no el estilo web de `thc-marca`.
+Si piden la presentación en otra herramienta (Google Slides, PowerPoint, un tipo de artifact de slides), aplica allí el estilo del tema de slides descrito arriba (títulos finos, tarjetas grises, mucho blanco), no el estilo web de `thc-marca`.
 
 ## Otros materiales
 
