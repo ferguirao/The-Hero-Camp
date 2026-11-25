@@ -1,11 +1,11 @@
 ---
 name: thc-marca
-description: Sistema visual de The Hero Camp con valores exactos (colores por fondo, tipografía y pesos, botones, bordes y sombras, espaciado, componentes, logo). Úsala SIEMPRE antes de diseñar cualquier pieza con la marca THC: web, landing, email, carrusel, presentación, documento o post.
+description: "Sistema visual web de The Hero Camp con valores exactos (colores por fondo, tipografía y pesos, botones, bordes y sombras, espaciado, componentes, logo). Úsala antes de diseñar webs, landings, emails, carruseles y posts con la marca THC; para presentaciones, solo aporta colores y fuentes (el estilo está en thc-presentaciones)."
 ---
 
 # The Hero Camp · sistema visual
 
-Todo lo que hay aquí sale del CSS de la web de referencia (variante v2 de la portada). No es orientativo: usa estos valores tal cual. Lo que hace que algo "parezca THC" son los detalles: bordes de 2 px, sombras sólidas desplazadas, titulares en negrita apretados, el subrayado de rotulador lima y el manuscrito.
+Todo lo que hay aquí sale del CSS de la web de referencia (variante v2 de la portada). No es orientativo: usa estos valores tal cual en webs, landings, emails, carruseles y posts. **En presentaciones solo valen los colores y las fuentes** (y cómo se usan en slides, en la sección 12): bordes de 2 px, sombras sólidas y titulares de 700 apretados no van en slides; el estilo de slides está en `thc-presentaciones` (tema Slidev de Course-Builder). Lo que hace que algo "parezca THC" son los detalles: bordes de 2 px, sombras sólidas desplazadas, titulares en negrita apretados, el subrayado de rotulador lima y el manuscrito.
 
 Las demás skills de THC (`thc-web`, `thc-carrusel-caso`, `thc-presentaciones`) parten de esta. `referencias/si/pagina-v2.png` es una página de ejemplo con todo aplicado (sale de `thc-web/plantillas/pagina.html`).
 
@@ -159,6 +159,8 @@ Para piezas grandes (portadas, cierres, carruseles) está el logo apilado con "H
 
 ## 10. Errores frecuentes (mira `referencias/no/`)
 
+> Las secciones 3 a 9 y esta lista son para web, email y redes. Para slides, mira la sección 12.
+
 Al aplicar una versión anterior de esta skill salieron estos fallos:
 
 - Titulares negros o párrafos gris oscuro sobre verde oscuro, que no se leen.
@@ -166,7 +168,7 @@ Al aplicar una versión anterior de esta skill salieron estos fallos:
 - Un lima más claro o amarillento que `#98DA01`.
 - Tarjetas con borde fino de 1px gris, sin sombra sólida: parecen de cualquier SaaS. En THC el borde es de 2px `--ink` y la sombra es sólida.
 - Badges de ahorro ("AHORRAS 1.190 €"). El descuento se muestra con el precio antiguo tachado en `--gris` encima del nuevo en 700.
-- Cajitas encadenadas con flechas para explicar un recorrido.
+- Cajitas encadenadas con flechas para explicar un recorrido (en web; en slides un flujo de pasos con flechas sí vale, ver `thc-presentaciones`).
 - Botones sin borde ni sombra, o con esquinas redondeadas.
 - Manuscrito gris o en cada tarjeta. Va en rosa o amarillo y una vez por sección.
 
@@ -179,3 +181,21 @@ Al aplicar una versión anterior de esta skill salieron estos fallos:
 - [ ] ¿Manuscrito en Permanent Marker, rosa o amarillo, una vez por sección?
 - [ ] ¿Logo con isotipo, no solo texto?
 - [ ] ¿Cero sombras difuminadas, degradados de color y badges de ahorro?
+
+## 12. Colores y fuentes en slides
+
+En slides el sistema es más suave que en web: sin bordes de 2 px ni sombras sólidas, esquinas redondeadas (14–18 px) y mucho blanco. Lo que sí se hereda:
+
+| Uso en slide | Color |
+| --- | --- |
+| Fondo de contenido | blanco; elementos repetidos sobre `#F4F6F5` |
+| Mensajes, separadores, cierre | verde oscuro `#003133`, texto blanco, lo clave en lima |
+| Elemento activo o solución | verde claro `#EAFFBF` con borde interior de 2 px lima |
+| Problema, barrera, "no" | rosa claro `#fde6ee` con texto `#a3134f` |
+| Manuscrito (Permanent Marker) | rosa `#E83B83` sobre claro; lima o blanco sobre oscuro |
+| Sticky | amarillo pálido `#fff3b0` (no el amarillo de marca) |
+| Cinta, tercer hilo de un garabato | amarillo `#FFDA23` |
+
+- El manuscrito en slides puede aparecer en cada slide (una vez), no solo una vez por sección como en web, y va recto.
+- Títulos de contenido en DM Sans 400 con la expresión clave en 700; el tracking negativo de la web no se aplica.
+- Logos de empresas de los casos en su color original (o en negro si el fondo lo pide), no monocromos en `--gris` como en web.
