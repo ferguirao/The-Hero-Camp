@@ -1,19 +1,19 @@
 ---
 name: thc-presentaciones
-description: "Cómo hacer presentaciones de formación y charlas de The Hero Camp (16:9) con el tema Slidev de Course-Builder, y cómo aplicar la marca a materiales de sesión, documentos y otras piezas que no sean webs ni carruseles."
+description: "Cómo hacer presentaciones de formación y charlas de The Hero Camp (16:9) con el tema Slidev de THC (`slides/tema/` de este repo), y cómo aplicar la marca a materiales de sesión, documentos y otras piezas que no sean webs ni carruseles."
 ---
 
 # Presentaciones y materiales · The Hero Camp
 
-Las slides de THC **no** heredan el estilo web de `thc-marca` (bordes de 2 px, sombras sólidas, titulares de 700 apretados): ese estilo es de la web. Las slides siguen el tema de Slidev del repo Course-Builder (`ferguirao/Course-Builder`): `slides/tema/` (layouts y estilos), `compartido/marca/marca.md` (guía de marca de slides) y las skills del repo `elegir-slide`, `maquetacion-thc`, `garabatos-thc`, `imagenes-thc` y `revisar-slides`. De `thc-marca` solo se toman los colores y las fuentes.
+Las slides de THC **no** heredan el estilo web de `thc-marca` (bordes de 2 px, sombras sólidas, titulares de 700 apretados): ese estilo es de la web. Las slides siguen el tema de Slidev de THC, que vive en el repo `ferguirao/The-Hero-Camp`: `slides/tema/` (layouts y estilos), `compartido/marca/marca.md` (guía de marca de slides, logos y garabatos) y las skills `elegir-slide`, `maquetacion-thc`, `garabatos-thc`, `imagenes-thc` y `revisar-slides`. De `thc-marca` solo se toman los colores y las fuentes.
 
 ## Presentaciones de formación y charlas (16:9)
 
-**Cómo se hacen:** en Slidev, dentro de Course-Builder, con `theme: thc` (`canvasWidth: 980`). Si el repo no está en la sesión, añádelo antes de maquetar; no reconstruyas el tema a mano en HTML.
+**Cómo se hacen:** en Slidev con `theme: thc` (`canvasWidth: 980`), en un proyecto que instale el tema de este repo (Course-Builder lo trae como submódulo en `vendor/the-hero-camp`). Si no hay ninguno en la sesión, añade The-Hero-Camp o Course-Builder antes de maquetar; no reconstruyas el tema a mano en HTML.
 
 1. Plan slide a slide con `elegir-slide` (forma del contenido, recurso, layout, receta, garabato).
 2. Maqueta con `maquetacion-thc`: layouts del tema (`portada`, `separador`, `mensaje`, `contenido`, `figura`, `caso`, `comparar`, `lado-foto`, `foto-mensaje`, `pregunta`, `cita`, `ponente`…) y la capa de patrones `p-*` de `slides/tema/styles/patrones.css`.
-3. Exporta con `npm run exportar -- <ruta>/slides.md`, revisa hojas de contacto con `revisar-slides` y entrega el PDF.
+3. Exporta con `npx slidev export <ruta>/slides.md` (en Course-Builder, `npm run exportar -- <ruta>/slides.md`), revisa hojas de contacto con `revisar-slides` y entrega el PDF.
 
 **Charlas (fuera de los cursos):** van en `charlas/<nombre>/` con su propio `slides.md` (solo headmatter + `src:` a `secciones/N-bloque.md`), `style.css` de la charla, `components/` con un `.vue` por cada visual dibujado y `public/img/`. Las imágenes se ponen con `<Im f="archivo.png" />` (respeta la ruta base del build) y los logos de empresa con `<MarcaLogo nombre="…" />` (SVG de `logos/`) o el icono oficial como imagen.
 
@@ -77,7 +77,7 @@ Reglas:
 
 `plantillas/presentacion.html` tiene estos tipos maquetados a 1920 × 1080; úsala solo para piezas sueltas, nunca para una presentación completa.
 
-Si piden la presentación en otra herramienta (Google Slides, PowerPoint, un tipo de artifact de slides), aplica allí el estilo de Course-Builder descrito arriba (títulos finos, tarjetas grises, mucho blanco), no el estilo web de `thc-marca`.
+Si piden la presentación en otra herramienta (Google Slides, PowerPoint, un tipo de artifact de slides), aplica allí el estilo del tema de slides descrito arriba (títulos finos, tarjetas grises, mucho blanco), no el estilo web de `thc-marca`.
 
 ## Otros materiales
 

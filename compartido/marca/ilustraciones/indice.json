@@ -1,0 +1,1943 @@
+[
+ {
+  "nombre": "almohadilla-01",
+  "archivo": "almohadilla-01.svg",
+  "coleccion": "principal",
+  "significado": [
+   "etiqueta",
+   "número",
+   "hashtag"
+  ],
+  "roles": [
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 65,
+  "alto": 57,
+  "ratio": 1.14
+ },
+ {
+  "nombre": "almohadilla-02",
+  "archivo": "almohadilla-02.svg",
+  "coleccion": "principal",
+  "significado": [
+   "etiqueta",
+   "número",
+   "hashtag"
+  ],
+  "roles": [
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 52,
+  "alto": 71,
+  "ratio": 0.73
+ },
+ {
+  "nombre": "arco-con-bucle",
+  "archivo": "arco-con-bucle.svg",
+  "coleccion": "principal",
+  "significado": [
+   "movimiento",
+   "énfasis"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 181,
+  "alto": 87,
+  "ratio": 2.09
+ },
+ {
+  "nombre": "avion-de-papel",
+  "archivo": "avion-de-papel.svg",
+  "coleccion": "principal",
+  "significado": [
+   "lanzar",
+   "enviar",
+   "launch",
+   "mvp"
+  ],
+  "roles": [
+   "separador",
+   "portada",
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 106,
+  "alto": 84,
+  "ratio": 1.26
+ },
+ {
+  "nombre": "bocadillo-con-corazon",
+  "archivo": "bocadillo-con-corazon.svg",
+  "coleccion": "principal",
+  "significado": [
+   "conversación",
+   "feedback",
+   "opinión"
+  ],
+  "roles": [
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 87,
+  "alto": 75,
+  "ratio": 1.16
+ },
+ {
+  "nombre": "brote-con-trazo",
+  "archivo": "brote-con-trazo.svg",
+  "coleccion": "principal",
+  "significado": [
+   "crecimiento",
+   "frescura",
+   "naturaleza"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "grande",
+  "ancho": 127,
+  "alto": 113,
+  "ratio": 1.13
+ },
+ {
+  "nombre": "bucles-grandes",
+  "archivo": "bucles-grandes.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 152,
+  "alto": 115,
+  "ratio": 1.33
+ },
+ {
+  "nombre": "bucles-medios",
+  "archivo": "bucles-medios.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "medio",
+  "ancho": 101,
+  "alto": 99,
+  "ratio": 1.02
+ },
+ {
+  "nombre": "calavera",
+  "archivo": "calavera.svg",
+  "coleccion": "principal",
+  "significado": [
+   "riesgo",
+   "fallo",
+   "peligro"
+  ],
+  "roles": [
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 106,
+  "alto": 119,
+  "ratio": 0.89
+ },
+ {
+  "nombre": "cara-sonriente-sin-contorno",
+  "archivo": "cara-sonriente-sin-contorno.svg",
+  "coleccion": "principal",
+  "significado": [
+   "positivo",
+   "satisfacción",
+   "bienvenida",
+   "usuario"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "medio",
+  "ancho": 67,
+  "alto": 51,
+  "ratio": 1.3
+ },
+ {
+  "nombre": "carita-sonriente",
+  "archivo": "carita-sonriente.svg",
+  "coleccion": "principal",
+  "significado": [
+   "positivo",
+   "satisfacción",
+   "bienvenida",
+   "usuario"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "grande",
+  "ancho": 121,
+  "alto": 119,
+  "ratio": 1.01
+ },
+ {
+  "nombre": "check",
+  "archivo": "check.svg",
+  "coleccion": "principal",
+  "significado": [
+   "hecho",
+   "validado",
+   "correcto"
+  ],
+  "roles": [
+   "enfasis",
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 92,
+  "alto": 71,
+  "ratio": 1.31
+ },
+ {
+  "nombre": "chispa-con-rayitas",
+  "archivo": "chispa-con-rayitas.svg",
+  "coleccion": "principal",
+  "significado": [
+   "logro",
+   "brillo",
+   "idea",
+   "destacar"
+  ],
+  "roles": [
+   "enfasis",
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 73,
+  "alto": 75,
+  "ratio": 0.98
+ },
+ {
+  "nombre": "chispas-cuatro",
+  "archivo": "chispas-cuatro.svg",
+  "coleccion": "principal",
+  "significado": [
+   "logro",
+   "brillo",
+   "idea",
+   "destacar"
+  ],
+  "roles": [
+   "enfasis",
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 107,
+  "alto": 107,
+  "ratio": 1.0
+ },
+ {
+  "nombre": "chispas-dobles",
+  "archivo": "chispas-dobles.svg",
+  "coleccion": "principal",
+  "significado": [
+   "logro",
+   "brillo",
+   "idea",
+   "destacar"
+  ],
+  "roles": [
+   "enfasis",
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 51,
+  "alto": 81,
+  "ratio": 0.63
+ },
+ {
+  "nombre": "chispas-tres",
+  "archivo": "chispas-tres.svg",
+  "coleccion": "principal",
+  "significado": [
+   "logro",
+   "brillo",
+   "idea",
+   "destacar"
+  ],
+  "roles": [
+   "enfasis",
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 76,
+  "alto": 98,
+  "ratio": 0.77
+ },
+ {
+  "nombre": "cometa-con-estela",
+  "archivo": "cometa-con-estela.svg",
+  "coleccion": "principal",
+  "significado": [
+   "rapidez",
+   "logro",
+   "deseo",
+   "lanzamiento"
+  ],
+  "roles": [
+   "acento",
+   "portada"
+  ],
+  "tamano": "grande",
+  "ancho": 181,
+  "alto": 186,
+  "ratio": 0.97
+ },
+ {
+  "nombre": "constelacion",
+  "archivo": "constelacion.svg",
+  "coleccion": "principal",
+  "significado": [
+   "conectar puntos",
+   "estrategia",
+   "visión",
+   "roadmap",
+   "ruta"
+  ],
+  "roles": [
+   "separador",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 308,
+  "alto": 145,
+  "ratio": 2.12
+ },
+ {
+  "nombre": "corazon-alargado",
+  "archivo": "corazon-alargado.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "medio",
+  "ancho": 46,
+  "alto": 76,
+  "ratio": 0.61
+ },
+ {
+  "nombre": "corazon-cometa",
+  "archivo": "corazon-cometa.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "grande",
+  "ancho": 133,
+  "alto": 215,
+  "ratio": 0.61
+ },
+ {
+  "nombre": "corazon-con-bucle",
+  "archivo": "corazon-con-bucle.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "medio",
+  "ancho": 55,
+  "alto": 83,
+  "ratio": 0.67
+ },
+ {
+  "nombre": "corazon-con-orbita",
+  "archivo": "corazon-con-orbita.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "medio",
+  "ancho": 105,
+  "alto": 90,
+  "ratio": 1.16
+ },
+ {
+  "nombre": "corazon-con-tallo",
+  "archivo": "corazon-con-tallo.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "grande",
+  "ancho": 107,
+  "alto": 152,
+  "ratio": 0.7
+ },
+ {
+  "nombre": "corazon-diminuto-01",
+  "archivo": "corazon-diminuto-01.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "pequeno",
+  "ancho": 33,
+  "alto": 40,
+  "ratio": 0.83
+ },
+ {
+  "nombre": "corazon-diminuto-02",
+  "archivo": "corazon-diminuto-02.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "pequeno",
+  "ancho": 38,
+  "alto": 42,
+  "ratio": 0.9
+ },
+ {
+  "nombre": "corazon-diminuto-03",
+  "archivo": "corazon-diminuto-03.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "pequeno",
+  "ancho": 31,
+  "alto": 33,
+  "ratio": 0.96
+ },
+ {
+  "nombre": "corazon-diminuto-04",
+  "archivo": "corazon-diminuto-04.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "pequeno",
+  "ancho": 36,
+  "alto": 44,
+  "ratio": 0.81
+ },
+ {
+  "nombre": "corazon-doble-trazo",
+  "archivo": "corazon-doble-trazo.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "medio",
+  "ancho": 46,
+  "alto": 56,
+  "ratio": 0.83
+ },
+ {
+  "nombre": "corazon-pequeno-01",
+  "archivo": "corazon-pequeno-01.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "pequeno",
+  "ancho": 45,
+  "alto": 54,
+  "ratio": 0.83
+ },
+ {
+  "nombre": "corazon-pequeno-02",
+  "archivo": "corazon-pequeno-02.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "pequeno",
+  "ancho": 46,
+  "alto": 42,
+  "ratio": 1.1
+ },
+ {
+  "nombre": "corazon-relleno",
+  "archivo": "corazon-relleno.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "medio",
+  "ancho": 61,
+  "alto": 87,
+  "ratio": 0.7
+ },
+ {
+  "nombre": "corazon-reticulado",
+  "archivo": "corazon-reticulado.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "medio",
+  "ancho": 53,
+  "alto": 69,
+  "ratio": 0.76
+ },
+ {
+  "nombre": "corazon-simple",
+  "archivo": "corazon-simple.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "pequeno",
+  "ancho": 52,
+  "alto": 53,
+  "ratio": 0.98
+ },
+ {
+  "nombre": "corona",
+  "archivo": "corona.svg",
+  "coleccion": "principal",
+  "significado": [
+   "liderazgo",
+   "excelencia",
+   "épico",
+   "top"
+  ],
+  "roles": [
+   "separador",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 114,
+  "alto": 117,
+  "ratio": 0.97
+ },
+ {
+  "nombre": "destello-asterisco",
+  "archivo": "destello-asterisco.svg",
+  "coleccion": "principal",
+  "significado": [
+   "logro",
+   "brillo",
+   "idea",
+   "destacar"
+  ],
+  "roles": [
+   "enfasis",
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 70,
+  "alto": 60,
+  "ratio": 1.16
+ },
+ {
+  "nombre": "destello-cuatro-puntas",
+  "archivo": "destello-cuatro-puntas.svg",
+  "coleccion": "principal",
+  "significado": [
+   "logro",
+   "brillo",
+   "idea",
+   "destacar"
+  ],
+  "roles": [
+   "enfasis",
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 68,
+  "alto": 82,
+  "ratio": 0.82
+ },
+ {
+  "nombre": "dos-estrellas-garabato",
+  "archivo": "dos-estrellas-garabato.svg",
+  "coleccion": "principal",
+  "significado": [
+   "logro",
+   "brillo",
+   "idea",
+   "destacar"
+  ],
+  "roles": [
+   "enfasis",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 102,
+  "alto": 122,
+  "ratio": 0.84
+ },
+ {
+  "nombre": "dos-flechas-con-puntos",
+  "archivo": "dos-flechas-con-puntos.svg",
+  "coleccion": "principal",
+  "significado": [
+   "avance",
+   "siguiente paso",
+   "dirección",
+   "hacia"
+  ],
+  "roles": [
+   "conector",
+   "portada",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 137,
+  "alto": 139,
+  "ratio": 0.98
+ },
+ {
+  "nombre": "equis-gruesa",
+  "archivo": "equis-gruesa.svg",
+  "coleccion": "principal",
+  "significado": [
+   "descartar",
+   "no",
+   "tachar"
+  ],
+  "roles": [
+   "enfasis"
+  ],
+  "tamano": "medio",
+  "ancho": 67,
+  "alto": 88,
+  "ratio": 0.76
+ },
+ {
+  "nombre": "espina-de-pescado",
+  "archivo": "espina-de-pescado.svg",
+  "coleccion": "principal",
+  "significado": [
+   "metáfora",
+   "humor",
+   "curiosidad"
+  ],
+  "roles": [
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 136,
+  "alto": 92,
+  "ratio": 1.48
+ },
+ {
+  "nombre": "espiral-grande",
+  "archivo": "espiral-grande.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 234,
+  "alto": 134,
+  "ratio": 1.75
+ },
+ {
+  "nombre": "espiral-pequena-01",
+  "archivo": "espiral-pequena-01.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "pequeno",
+  "ancho": 39,
+  "alto": 39,
+  "ratio": 1.0
+ },
+ {
+  "nombre": "espiral-pequena-02",
+  "archivo": "espiral-pequena-02.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "pequeno",
+  "ancho": 42,
+  "alto": 37,
+  "ratio": 1.12
+ },
+ {
+  "nombre": "espiral-pequena-03",
+  "archivo": "espiral-pequena-03.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "pequeno",
+  "ancho": 36,
+  "alto": 42,
+  "ratio": 0.86
+ },
+ {
+  "nombre": "estrella-con-destellos",
+  "archivo": "estrella-con-destellos.svg",
+  "coleccion": "principal",
+  "significado": [
+   "impacto",
+   "sorpresa",
+   "destacar"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 193,
+  "alto": 163,
+  "ratio": 1.19
+ },
+ {
+  "nombre": "estrella-explosion",
+  "archivo": "estrella-explosion.svg",
+  "coleccion": "principal",
+  "significado": [
+   "impacto",
+   "sorpresa",
+   "destacar"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 127,
+  "alto": 109,
+  "ratio": 1.16
+ },
+ {
+  "nombre": "estrella-fugaz-con-estela",
+  "archivo": "estrella-fugaz-con-estela.svg",
+  "coleccion": "principal",
+  "significado": [
+   "rapidez",
+   "logro",
+   "deseo",
+   "lanzamiento"
+  ],
+  "roles": [
+   "acento",
+   "portada"
+  ],
+  "tamano": "grande",
+  "ancho": 214,
+  "alto": 147,
+  "ratio": 1.45
+ },
+ {
+  "nombre": "estrella-fugaz-con-rayo",
+  "archivo": "estrella-fugaz-con-rayo.svg",
+  "coleccion": "principal",
+  "significado": [
+   "rapidez",
+   "logro",
+   "deseo",
+   "lanzamiento"
+  ],
+  "roles": [
+   "acento",
+   "portada"
+  ],
+  "tamano": "grande",
+  "ancho": 210,
+  "alto": 92,
+  "ratio": 2.29
+ },
+ {
+  "nombre": "flecha-abajo",
+  "archivo": "flecha-abajo.svg",
+  "coleccion": "principal",
+  "significado": [
+   "avance",
+   "siguiente paso",
+   "dirección",
+   "hacia"
+  ],
+  "roles": [
+   "conector",
+   "portada",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 32,
+  "alto": 112,
+  "ratio": 0.29
+ },
+ {
+  "nombre": "flecha-ascendente-con-bucle",
+  "archivo": "flecha-ascendente-con-bucle.svg",
+  "coleccion": "principal",
+  "significado": [
+   "avance",
+   "siguiente paso",
+   "dirección",
+   "hacia"
+  ],
+  "roles": [
+   "conector",
+   "portada",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 105,
+  "alto": 145,
+  "ratio": 0.72
+ },
+ {
+  "nombre": "flecha-con-bucle",
+  "archivo": "flecha-con-bucle.svg",
+  "coleccion": "principal",
+  "significado": [
+   "avance",
+   "siguiente paso",
+   "dirección",
+   "hacia"
+  ],
+  "roles": [
+   "conector",
+   "portada",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 87,
+  "alto": 146,
+  "ratio": 0.6
+ },
+ {
+  "nombre": "flecha-con-corazon",
+  "archivo": "flecha-con-corazon.svg",
+  "coleccion": "principal",
+  "significado": [
+   "avance",
+   "siguiente paso",
+   "dirección",
+   "hacia"
+  ],
+  "roles": [
+   "conector",
+   "portada",
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 88,
+  "alto": 96,
+  "ratio": 0.91
+ },
+ {
+  "nombre": "flecha-con-gafas-de-sol",
+  "archivo": "flecha-con-gafas-de-sol.svg",
+  "coleccion": "principal",
+  "significado": [
+   "avance",
+   "siguiente paso",
+   "dirección",
+   "hacia"
+  ],
+  "roles": [
+   "conector",
+   "portada",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 171,
+  "alto": 148,
+  "ratio": 1.16
+ },
+ {
+  "nombre": "flecha-con-muelle",
+  "archivo": "flecha-con-muelle.svg",
+  "coleccion": "principal",
+  "significado": [
+   "avance",
+   "siguiente paso",
+   "dirección",
+   "hacia"
+  ],
+  "roles": [
+   "conector",
+   "portada",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 302,
+  "alto": 50,
+  "ratio": 6.04
+ },
+ {
+  "nombre": "flecha-con-rizo-y-corazon",
+  "archivo": "flecha-con-rizo-y-corazon.svg",
+  "coleccion": "principal",
+  "significado": [
+   "avance",
+   "siguiente paso",
+   "dirección",
+   "hacia"
+  ],
+  "roles": [
+   "conector",
+   "portada",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 120,
+  "alto": 110,
+  "ratio": 1.08
+ },
+ {
+  "nombre": "flecha-con-rizo",
+  "archivo": "flecha-con-rizo.svg",
+  "coleccion": "principal",
+  "significado": [
+   "avance",
+   "siguiente paso",
+   "dirección",
+   "hacia"
+  ],
+  "roles": [
+   "conector",
+   "portada",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 63,
+  "alto": 121,
+  "ratio": 0.52
+ },
+ {
+  "nombre": "flecha-curva",
+  "archivo": "flecha-curva.svg",
+  "coleccion": "principal",
+  "significado": [
+   "avance",
+   "siguiente paso",
+   "dirección",
+   "hacia"
+  ],
+  "roles": [
+   "conector",
+   "portada",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 315,
+  "alto": 159,
+  "ratio": 1.98
+ },
+ {
+  "nombre": "flecha-ondulada",
+  "archivo": "flecha-ondulada.svg",
+  "coleccion": "principal",
+  "significado": [
+   "avance",
+   "siguiente paso",
+   "dirección",
+   "hacia"
+  ],
+  "roles": [
+   "conector",
+   "portada",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 197,
+  "alto": 93,
+  "ratio": 2.13
+ },
+ {
+  "nombre": "flor",
+  "archivo": "flor.svg",
+  "coleccion": "principal",
+  "significado": [
+   "crecimiento",
+   "frescura",
+   "naturaleza"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "medio",
+  "ancho": 82,
+  "alto": 92,
+  "ratio": 0.9
+ },
+ {
+  "nombre": "globo-corazon",
+  "archivo": "globo-corazon.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "grande",
+  "ancho": 126,
+  "alto": 277,
+  "ratio": 0.45
+ },
+ {
+  "nombre": "guirnalda-de-corazones",
+  "archivo": "guirnalda-de-corazones.svg",
+  "coleccion": "principal",
+  "significado": [
+   "valor",
+   "cuidado",
+   "usuario",
+   "emoción"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "grande",
+  "ancho": 253,
+  "alto": 205,
+  "ratio": 1.23
+ },
+ {
+  "nombre": "labios",
+  "archivo": "labios.svg",
+  "coleccion": "principal",
+  "significado": [
+   "voz",
+   "opinión",
+   "beso"
+  ],
+  "roles": [
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 158,
+  "alto": 94,
+  "ratio": 1.69
+ },
+ {
+  "nombre": "linea-con-bucle",
+  "archivo": "linea-con-bucle.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 203,
+  "alto": 59,
+  "ratio": 3.41
+ },
+ {
+  "nombre": "lineas-con-rizos",
+  "archivo": "lineas-con-rizos.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 246,
+  "alto": 76,
+  "ratio": 3.24
+ },
+ {
+  "nombre": "nube-con-bucles",
+  "archivo": "nube-con-bucles.svg",
+  "coleccion": "principal",
+  "significado": [
+   "ideas",
+   "pensar",
+   "nube"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 138,
+  "alto": 92,
+  "ratio": 1.51
+ },
+ {
+  "nombre": "nube-con-lluvia",
+  "archivo": "nube-con-lluvia.svg",
+  "coleccion": "principal",
+  "significado": [
+   "bloqueo",
+   "tormenta",
+   "problema"
+  ],
+  "roles": [
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 156,
+  "alto": 149,
+  "ratio": 1.05
+ },
+ {
+  "nombre": "nube-con-rayas",
+  "archivo": "nube-con-rayas.svg",
+  "coleccion": "principal",
+  "significado": [
+   "ideas",
+   "pensar",
+   "nube"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 204,
+  "alto": 137,
+  "ratio": 1.49
+ },
+ {
+  "nombre": "nube-rizada",
+  "archivo": "nube-rizada.svg",
+  "coleccion": "principal",
+  "significado": [
+   "ideas",
+   "pensar",
+   "nube"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 166,
+  "alto": 136,
+  "ratio": 1.21
+ },
+ {
+  "nombre": "ojo-con-pestanas",
+  "archivo": "ojo-con-pestanas.svg",
+  "coleccion": "principal",
+  "significado": [
+   "atención",
+   "observar",
+   "discovery"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 151,
+  "alto": 119,
+  "ratio": 1.27
+ },
+ {
+  "nombre": "ola-con-acento",
+  "archivo": "ola-con-acento.svg",
+  "coleccion": "principal",
+  "significado": [
+   "incertidumbre",
+   "movimiento",
+   "flujo",
+   "volatilidad"
+  ],
+  "roles": [
+   "acento",
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 159,
+  "alto": 66,
+  "ratio": 2.41
+ },
+ {
+  "nombre": "ola-suave",
+  "archivo": "ola-suave.svg",
+  "coleccion": "principal",
+  "significado": [
+   "incertidumbre",
+   "movimiento",
+   "flujo",
+   "volatilidad"
+  ],
+  "roles": [
+   "acento",
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 150,
+  "alto": 59,
+  "ratio": 2.53
+ },
+ {
+  "nombre": "pez",
+  "archivo": "pez.svg",
+  "coleccion": "principal",
+  "significado": [
+   "metáfora",
+   "humor",
+   "curiosidad"
+  ],
+  "roles": [
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 129,
+  "alto": 100,
+  "ratio": 1.29
+ },
+ {
+  "nombre": "piruleta",
+  "archivo": "piruleta.svg",
+  "coleccion": "principal",
+  "significado": [
+   "crecimiento",
+   "frescura",
+   "naturaleza"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "grande",
+  "ancho": 92,
+  "alto": 163,
+  "ratio": 0.57
+ },
+ {
+  "nombre": "planeta-con-anillo",
+  "archivo": "planeta-con-anillo.svg",
+  "coleccion": "principal",
+  "significado": [
+   "exploración",
+   "visión",
+   "energía",
+   "positivo"
+  ],
+  "roles": [
+   "separador",
+   "acento"
+  ],
+  "tamano": "medio",
+  "ancho": 106,
+  "alto": 64,
+  "ratio": 1.66
+ },
+ {
+  "nombre": "planeta-con-bandera",
+  "archivo": "planeta-con-bandera.svg",
+  "coleccion": "principal",
+  "significado": [
+   "exploración",
+   "visión",
+   "energía",
+   "positivo"
+  ],
+  "roles": [
+   "separador",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 86,
+  "alto": 125,
+  "ratio": 0.69
+ },
+ {
+  "nombre": "ramita",
+  "archivo": "ramita.svg",
+  "coleccion": "principal",
+  "significado": [
+   "crecimiento",
+   "frescura",
+   "naturaleza"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "grande",
+  "ancho": 68,
+  "alto": 154,
+  "ratio": 0.44
+ },
+ {
+  "nombre": "rayo-contorno",
+  "archivo": "rayo-contorno.svg",
+  "coleccion": "principal",
+  "significado": [
+   "energía",
+   "idea",
+   "cambio",
+   "urgencia"
+  ],
+  "roles": [
+   "callout",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 109,
+  "alto": 179,
+  "ratio": 0.61
+ },
+ {
+  "nombre": "rayo-relleno",
+  "archivo": "rayo-relleno.svg",
+  "coleccion": "principal",
+  "significado": [
+   "energía",
+   "idea",
+   "cambio",
+   "urgencia"
+  ],
+  "roles": [
+   "callout",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 90,
+  "alto": 118,
+  "ratio": 0.76
+ },
+ {
+  "nombre": "rizo-con-flecha",
+  "archivo": "rizo-con-flecha.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "medio",
+  "ancho": 99,
+  "alto": 95,
+  "ratio": 1.04
+ },
+ {
+  "nombre": "rizo-largo-con-rayas",
+  "archivo": "rizo-largo-con-rayas.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 186,
+  "alto": 166,
+  "ratio": 1.12
+ },
+ {
+  "nombre": "rizos-grandes",
+  "archivo": "rizos-grandes.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 233,
+  "alto": 183,
+  "ratio": 1.27
+ },
+ {
+  "nombre": "rizos-largos",
+  "archivo": "rizos-largos.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 149,
+  "alto": 183,
+  "ratio": 0.81
+ },
+ {
+  "nombre": "sol-con-cara",
+  "archivo": "sol-con-cara.svg",
+  "coleccion": "principal",
+  "significado": [
+   "exploración",
+   "visión",
+   "energía",
+   "positivo"
+  ],
+  "roles": [
+   "separador",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 257,
+  "alto": 267,
+  "ratio": 0.96
+ },
+ {
+  "nombre": "torbellino",
+  "archivo": "torbellino.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "grande",
+  "ancho": 147,
+  "alto": 134,
+  "ratio": 1.1
+ },
+ {
+  "nombre": "trazo-con-bucle",
+  "archivo": "trazo-con-bucle.svg",
+  "coleccion": "principal",
+  "significado": [
+   "iteración",
+   "ciclo",
+   "complejidad",
+   "vuelta"
+  ],
+  "roles": [
+   "acento",
+   "separador"
+  ],
+  "tamano": "medio",
+  "ancho": 110,
+  "alto": 54,
+  "ratio": 2.02
+ },
+ {
+  "nombre": "trazos-en-v",
+  "archivo": "trazos-en-v.svg",
+  "coleccion": "principal",
+  "significado": [
+   "movimiento",
+   "énfasis"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "medio",
+  "ancho": 67,
+  "alto": 110,
+  "ratio": 0.61
+ },
+ {
+  "nombre": "tulipan",
+  "archivo": "tulipan.svg",
+  "coleccion": "principal",
+  "significado": [
+   "crecimiento",
+   "frescura",
+   "naturaleza"
+  ],
+  "roles": [
+   "acento",
+   "cierre"
+  ],
+  "tamano": "grande",
+  "ancho": 75,
+  "alto": 131,
+  "ratio": 0.57
+ },
+ {
+  "nombre": "xoxo",
+  "archivo": "xoxo.svg",
+  "coleccion": "principal",
+  "significado": [
+   "cariño",
+   "despedida",
+   "cierre"
+  ],
+  "roles": [
+   "cierre",
+   "acento"
+  ],
+  "tamano": "grande",
+  "ancho": 215,
+  "alto": 98,
+  "ratio": 2.2
+ },
+ {
+  "nombre": "zigzag-apretado",
+  "archivo": "zigzag-apretado.svg",
+  "coleccion": "principal",
+  "significado": [
+   "incertidumbre",
+   "movimiento",
+   "flujo",
+   "volatilidad"
+  ],
+  "roles": [
+   "acento",
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 128,
+  "alto": 105,
+  "ratio": 1.22
+ },
+ {
+  "nombre": "zigzag-enredado",
+  "archivo": "zigzag-enredado.svg",
+  "coleccion": "principal",
+  "significado": [
+   "incertidumbre",
+   "movimiento",
+   "flujo",
+   "volatilidad"
+  ],
+  "roles": [
+   "acento",
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 110,
+  "alto": 122,
+  "ratio": 0.9
+ },
+ {
+  "nombre": "zigzag-grande",
+  "archivo": "zigzag-grande.svg",
+  "coleccion": "principal",
+  "significado": [
+   "incertidumbre",
+   "movimiento",
+   "flujo",
+   "volatilidad"
+  ],
+  "roles": [
+   "acento",
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 113,
+  "alto": 132,
+  "ratio": 0.86
+ },
+ {
+  "nombre": "zigzag-picos",
+  "archivo": "zigzag-picos.svg",
+  "coleccion": "principal",
+  "significado": [
+   "incertidumbre",
+   "movimiento",
+   "flujo",
+   "volatilidad"
+  ],
+  "roles": [
+   "acento",
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 175,
+  "alto": 127,
+  "ratio": 1.38
+ },
+ {
+  "nombre": "zigzag-suave",
+  "archivo": "zigzag-suave.svg",
+  "coleccion": "principal",
+  "significado": [
+   "incertidumbre",
+   "movimiento",
+   "flujo",
+   "volatilidad"
+  ],
+  "roles": [
+   "acento",
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 147,
+  "alto": 79,
+  "ratio": 1.85
+ },
+ {
+  "nombre": "acentos-en-fila",
+  "archivo": "confeti/acentos-en-fila.svg",
+  "coleccion": "confeti",
+  "significado": [
+   "subida",
+   "más",
+   "progresión"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 138,
+  "alto": 138,
+  "ratio": 1.0
+ },
+ {
+  "nombre": "camino-de-trazos",
+  "archivo": "confeti/camino-de-trazos.svg",
+  "coleccion": "confeti",
+  "significado": [
+   "camino",
+   "proceso",
+   "progreso",
+   "recorrido"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 151,
+  "alto": 144,
+  "ratio": 1.05
+ },
+ {
+  "nombre": "chispazo-de-rayitas",
+  "archivo": "confeti/chispazo-de-rayitas.svg",
+  "coleccion": "confeti",
+  "significado": [
+   "logro",
+   "brillo",
+   "idea",
+   "destacar"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "medio",
+  "ancho": 96,
+  "alto": 68,
+  "ratio": 1.43
+ },
+ {
+  "nombre": "estallido-de-rayitas",
+  "archivo": "confeti/estallido-de-rayitas.svg",
+  "coleccion": "confeti",
+  "significado": [
+   "impacto",
+   "explosión",
+   "sorpresa"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 250,
+  "alto": 197,
+  "ratio": 1.27
+ },
+ {
+  "nombre": "gota-coma",
+  "archivo": "confeti/gota-coma.svg",
+  "coleccion": "confeti",
+  "significado": [
+   "textura",
+   "confeti"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "pequeno",
+  "ancho": 24,
+  "alto": 51,
+  "ratio": 0.48
+ },
+ {
+  "nombre": "gotas-centro-derecha",
+  "archivo": "confeti/gotas-centro-derecha.svg",
+  "coleccion": "confeti",
+  "significado": [
+   "textura",
+   "confeti"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 178,
+  "alto": 158,
+  "ratio": 1.13
+ },
+ {
+  "nombre": "gotas-derecha",
+  "archivo": "confeti/gotas-derecha.svg",
+  "coleccion": "confeti",
+  "significado": [
+   "textura",
+   "confeti"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 90,
+  "alto": 171,
+  "ratio": 0.52
+ },
+ {
+  "nombre": "puntos-abajo",
+  "archivo": "confeti/puntos-abajo.svg",
+  "coleccion": "confeti",
+  "significado": [
+   "textura",
+   "confeti"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "pequeno",
+  "ancho": 29,
+  "alto": 39,
+  "ratio": 0.74
+ },
+ {
+  "nombre": "puntos-centro",
+  "archivo": "confeti/puntos-centro.svg",
+  "coleccion": "confeti",
+  "significado": [
+   "textura",
+   "confeti"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "grande",
+  "ancho": 175,
+  "alto": 103,
+  "ratio": 1.7
+ },
+ {
+  "nombre": "rayitas-paralelas",
+  "archivo": "confeti/rayitas-paralelas.svg",
+  "coleccion": "confeti",
+  "significado": [
+   "textura",
+   "confeti"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "medio",
+  "ancho": 69,
+  "alto": 58,
+  "ratio": 1.19
+ },
+ {
+  "nombre": "trazo-curvo-01",
+  "archivo": "confeti/trazo-curvo-01.svg",
+  "coleccion": "confeti",
+  "significado": [
+   "movimiento",
+   "énfasis"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "pequeno",
+  "ancho": 15,
+  "alto": 37,
+  "ratio": 0.41
+ },
+ {
+  "nombre": "trazo-curvo-02",
+  "archivo": "confeti/trazo-curvo-02.svg",
+  "coleccion": "confeti",
+  "significado": [
+   "movimiento",
+   "énfasis"
+  ],
+  "roles": [
+   "decoracion"
+  ],
+  "tamano": "medio",
+  "ancho": 47,
+  "alto": 75,
+  "ratio": 0.63
+ }
+]

@@ -1,0 +1,52 @@
+/* Patrones de diseño elegante del tema thc (receta en .claude/skills/maquetacion-thc/referencias/diseno-elegante.md).
+   ADITIVO: todas las clases llevan el prefijo `p-` y no existían antes; ninguna slide anterior las usa, así que este archivo no cambia nada de lo vigente.
+   No modifiques aquí estilos de `.tarjeta`, `.cadena`, etc.: esos son los antiguos y no se tocan. */
+
+/* ---- Título fino con negrita solo en lo clave (en la clase de la slide: `class: p-titulo-fino`) ---- */
+.slidev-layout.p-titulo-fino h1,
+.slidev-layout.p-titulo-fino .titulo h1,
+.slidev-layout.p-titulo-fino .cuerpo h1 { font-size: 1.7rem; font-weight: 400; line-height: 1.2; }
+.slidev-layout.p-titulo-fino h1 strong { font-weight: 700; color: inherit; }
+.slidev-layout.p-titulo-fino.p-titulo-1-5 h1 { font-size: 1.5rem; }
+.slidev-layout.p-titulo-fino .titulo p { font-size: 1rem; color: var(--thc-gris-oscuro); }
+
+/* ---- Icono de trazo ---- */
+.p-ico { width: 48px; height: 48px; fill: none; stroke: var(--thc-verde-oscuro); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.p-ico.p-ico-s { width: 36px; height: 36px; }
+
+/* ---- Grupo de tarjetas grises con jerarquía: etiqueta mono, icono, título en negrita, texto regular ----
+   <div class="p-grupo p-2"> <div class="p-tarjeta"><span class="p-k">Premisa 1</span><svg class="p-ico">…</svg><strong>Título</strong><span>Texto</span></div> … </div> */
+.p-grupo { display: grid; gap: 1.2rem; margin-top: 1.8rem; }
+.p-grupo.p-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.p-grupo.p-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.p-grupo.p-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.p-tarjeta { display: flex; flex-direction: column; gap: 0.6rem; padding: 1.4rem; border-radius: 18px; background: var(--thc-gris-sutil); font-size: 1rem; line-height: 1.4; color: var(--thc-gris-oscuro); }
+.p-tarjeta .p-k { font-family: var(--thc-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--thc-gris-medio); }
+.p-tarjeta strong { font-size: 1.25rem; line-height: 1.2; font-weight: 700; color: var(--thc-verde-oscuro); }
+.p-tarjeta.p-activa { background: var(--thc-verde-claro); box-shadow: inset 0 0 0 2px var(--thc-lima); }
+.p-tarjeta.p-activa, .p-tarjeta.p-activa strong { color: var(--thc-verde-oscuro); }
+
+/* ---- Fila de chips grises (en vez de cajas verdes) y un solo chip activo ----
+   <div class="p-chips"><span class="p-chip">Problema</span> … <span class="p-chip p-activo">Métrica</span></div> */
+.p-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.p-chip { padding: 0.45rem 0.95rem; border-radius: 999px; background: var(--thc-gris-sutil); color: var(--thc-gris-oscuro); font-size: 0.95rem; font-weight: 500; }
+.p-chip.p-activo { background: var(--thc-verde-claro); box-shadow: inset 0 0 0 1.5px var(--thc-lima); color: var(--thc-verde-oscuro); }
+
+/* ---- Pregunta con fondo de acento y subrayado (layout `pregunta`, `class: p-pregunta`) ----
+   <p class="p-pie">¿Sí o no? ¿Por qué?</p> al final; <span class="p-resalte">expresión</span> en mitad de la frase */
+.slidev-layout.thc-pregunta.p-pregunta .etiqueta, .slidev-layout.thc-pregunta.p-pregunta .marca { display: none; }
+.slidev-layout.thc-pregunta.p-pregunta { padding-left: 5rem; }
+.slidev-layout.thc-pregunta.p-pregunta .texto h1,
+.slidev-layout.thc-pregunta.p-pregunta .texto p:not(.p-pie) { font-size: 3.2rem; font-weight: 400; line-height: 1.18; max-width: 88%; margin: 0; color: var(--thc-verde-oscuro); }
+.p-resalte { display: inline; background: linear-gradient(transparent 62%, var(--thc-lima) 62%); padding: 0 0.12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.slidev-layout.thc-pregunta.p-pregunta .p-pie { position: absolute; left: 5rem; bottom: 3rem; margin: 0; font-size: 0.85rem; color: var(--thc-verde-oscuro); }
+.p-pie::before { content: ''; display: inline-block; width: 2.2rem; height: 3px; background: var(--thc-verde-oscuro); vertical-align: middle; margin-right: 0.7rem; }
+
+/* ---- Visual dibujado (SVG dentro de `figura`, `class: p-visual`) ----
+   En el SVG el tamaño del texto va en `style="font-size:…"`, nunca como atributo. */
+.p-visual svg { width: 100%; height: 100%; font-family: var(--thc-sans); overflow: visible; }
+.p-nota { font-family: var(--thc-acento); color: var(--thc-rosa); }
+
+/* ---- Subtítulo y notas pequeñas ---- */
+.p-sub { font-size: 1rem; color: var(--thc-gris-oscuro); margin: 0 0 1rem; }
+.p-aviso { padding: 0.6rem 0.9rem; border-radius: 12px; background: var(--thc-gris-sutil); font-size: 0.9rem; color: var(--thc-gris-oscuro); }

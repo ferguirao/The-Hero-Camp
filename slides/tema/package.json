@@ -1,0 +1,23 @@
+{
+  "name": "slidev-theme-thc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tema de Slidev con el rebranding de The Hero Camp (ver compartido/marca/marca.md)",
+  "keywords": ["slidev-theme", "slidev"],
+  "engines": { "slidev": ">=0.48.0" },
+  "slidev": {
+    "defaults": {
+      "fonts": {
+        "sans": "DM Sans",
+        "mono": "DM Mono",
+        "serif": "Permanent Marker",
+        "weights": "400,500,700",
+        "provider": "google"
+      },
+      "aspectRatio": "16/9",
+      "canvasWidth": 980,
+      "transition": "fade",
+      "colorSchema": "light"
+    }
+  }
+}

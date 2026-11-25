@@ -1,0 +1,158 @@
+/* Tema The Hero Camp: paleta, tipografías y escala de compartido/marca/marca.md */
+:root {
+  /* Marca */
+  --thc-lima: #98da01;
+  --thc-verde-oscuro: #003133;
+  --thc-verde-claro: #eaffbf;
+  --thc-rosa: #e83b83;
+  --thc-amarillo: #ffda23;
+  /* Neutros */
+  --thc-negro: #1c2125;
+  --thc-gris-oscuro: #5c7069;
+  --thc-gris-medio: #9dafa9;
+  --thc-gris-claro: #c7d1ce;
+  --thc-gris-sutil: #f4f6f5;
+  --thc-blanco: #ffffff;
+  /* Tipografías */
+  --thc-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --thc-mono: 'DM Mono', ui-monospace, monospace;
+  --thc-acento: 'Permanent Marker', cursive;
+
+  --slidev-theme-primary: var(--thc-verde-oscuro);
+}
+
+.slidev-layout {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: var(--thc-sans);
+  color: var(--thc-negro);
+  background: var(--thc-blanco);
+  padding: 3rem 3.5rem;
+  line-height: 1.45;
+}
+
+.slidev-layout h1 { font-family: var(--thc-sans); font-weight: 700; font-size: 2.4rem; line-height: 1.1; color: var(--thc-verde-oscuro); margin: 0 0 1.5rem; }
+.slidev-layout h2 { font-family: var(--thc-sans); font-weight: 400; font-size: 1.6rem; color: var(--thc-gris-medio); }
+.slidev-layout h3 { font-weight: 700; font-size: 1.1rem; color: var(--thc-negro); margin-top: 0.8rem; }
+.slidev-layout p, .slidev-layout li { font-size: 1.05rem; }
+.slidev-layout strong { color: var(--thc-verde-oscuro); }
+.slidev-layout a { color: var(--thc-verde-oscuro); text-decoration: underline; text-decoration-color: var(--thc-lima); }
+.slidev-layout code { font-family: var(--thc-mono); }
+
+/* Kicker: etiqueta mono en mayúsculas */
+.thc-kicker { font-family: var(--thc-mono); text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.04em; color: var(--thc-gris-medio); }
+/* Fuente de acento: solo callouts, citas y preguntas (máx. 20 % de la slide) */
+.thc-acento { font-family: var(--thc-acento); color: var(--thc-lima); font-weight: 400; }
+.thc-footnote { font-size: 0.7rem; color: var(--thc-gris-medio); margin-top: 1.3rem; }
+
+/* Logo en color mediante máscara: el PNG aporta la forma y background-color el color */
+.thc-logo { display: block; background-color: currentColor; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-position: center; mask-position: center; }
+
+/* Hueco para doodles mientras no haya archivos */
+.thc-hueco-doodle { border: 2px dashed currentColor; opacity: 0.35; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-family: var(--thc-mono); font-size: 0.65rem; text-transform: uppercase; }
+
+/* Fondos */
+.thc-fondo-oscuro { background: var(--thc-verde-oscuro); color: var(--thc-blanco); }
+.thc-fondo-oscuro h1 { color: var(--thc-blanco); }
+.thc-fondo-negro { background: var(--thc-negro); color: var(--thc-blanco); }
+.thc-fondo-negro h1 { color: var(--thc-blanco); }
+.thc-fondo-lima { background: var(--thc-lima); color: var(--thc-verde-oscuro); }
+.thc-fondo-claro { background: var(--thc-verde-claro); color: var(--thc-negro); }
+.thc-fondo-sutil { background: var(--thc-gris-sutil); }
+
+/* ---------- Utilidades para slides de contenido (HTML dentro del Markdown) ---------- */
+.thc-fondo-claro-marca { background: var(--thc-verde-claro); }
+
+/* Lista con marca de verificación en lima */
+.checklist ul, ul.checklist { list-style: none; padding-left: 0; }
+.checklist li, ul.checklist li { position: relative; padding-left: 1.6rem; margin: 0.35rem 0; }
+.checklist li::before, ul.checklist li::before { content: ''; position: absolute; left: 0; top: 0.28em; width: 1rem; height: 1rem; border-radius: 50%; background: var(--thc-lima); box-shadow: inset 0 0 0 4px var(--thc-lima), inset 0 0 0 9px var(--thc-lima); }
+.checklist li::after, ul.checklist li::after { content: ''; position: absolute; left: 0.28rem; top: 0.45em; width: 0.28rem; height: 0.5rem; border: solid var(--thc-verde-oscuro); border-width: 0 2px 2px 0; transform: rotate(40deg); }
+/* Lista con aspa */
+.aspas ul, ul.aspas { list-style: none; padding-left: 0; }
+.aspas li, ul.aspas li { position: relative; padding-left: 1.6rem; margin: 0.35rem 0; }
+.aspas li::before, ul.aspas li::before { content: '×'; position: absolute; left: 0; top: -0.1em; font-size: 1.3rem; font-weight: 700; color: var(--thc-rosa); }
+
+/* Rejillas */
+.dos { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; }
+.tres { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; align-items: stretch; }
+.cinco { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.7rem; align-items: stretch; }
+/* Tarjetas */
+.tarjeta { background: var(--thc-verde-claro); color: var(--thc-negro); border-radius: 18px; padding: 0.9rem 1rem; font-size: 0.82rem; line-height: 1.35; }
+.tarjeta h4, .tarjeta strong:first-child { display: block; font-weight: 700; font-size: 0.95rem; color: var(--thc-verde-oscuro); margin-bottom: 0.35rem; }
+.tarjeta.sutil { background: var(--thc-gris-sutil); }
+.tarjeta.oscura { background: var(--thc-verde-oscuro); color: var(--thc-blanco); }
+.tarjeta.oscura strong:first-child, .tarjeta.oscura h4 { color: var(--thc-lima); }
+/* Etiqueta / chip */
+.chip { display: inline-block; background: var(--thc-lima); color: var(--thc-verde-oscuro); font-weight: 700; border-radius: 999px; padding: 0.15rem 0.8rem; font-size: 0.85rem; }
+.chip.oscuro { background: var(--thc-verde-oscuro); color: var(--thc-lima); }
+.chip.rosa { background: var(--thc-rosa); color: var(--thc-blanco); }
+.etiqueta-barra { background: var(--thc-verde-oscuro); color: var(--thc-blanco); font-weight: 700; text-align: center; border-radius: 8px; padding: 0.35rem 0.8rem; font-size: 1rem; }
+/* Fórmula */
+.formula { display: inline-block; background: var(--thc-verde-claro); border-radius: 10px; padding: 0.25rem 0.8rem; font-family: var(--thc-mono); font-size: 0.78rem; color: var(--thc-verde-oscuro); }
+/* Texto destacado */
+.lima { color: var(--thc-lima); }
+.verde { color: var(--thc-verde-oscuro); }
+.gris { color: var(--thc-gris-medio); }
+.centro { text-align: center; }
+.pequeno { font-size: 0.8rem; }
+.fuente { font-size: 0.65rem; color: var(--thc-gris-medio); font-family: var(--thc-mono); }
+.slidev-layout img.figura-img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; margin: 0 auto; }
+.slidev-layout .acento { font-family: var(--thc-acento); color: var(--thc-verde-oscuro); }
+
+/* Tablas con la marca */
+.slidev-layout table { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 0.82rem; }
+.slidev-layout th { background: var(--thc-verde-oscuro); color: var(--thc-blanco); font-family: var(--thc-mono); font-weight: 400; text-transform: uppercase; font-size: 0.68rem; letter-spacing: 0.04em; text-align: left; padding: 0.45rem 0.7rem; }
+.slidev-layout td { padding: 0.45rem 0.7rem; border-bottom: 1px solid var(--thc-gris-claro); }
+.slidev-layout tr:nth-child(even) td { background: var(--thc-gris-sutil); }
+
+/* Lista numerada con círculos */
+.numerada ol { list-style: none; counter-reset: n; padding-left: 0; }
+.numerada li { counter-increment: n; display: flex; align-items: center; gap: 0.9rem; margin: 0.75rem 0; font-weight: 700; font-size: 1.1rem; }
+.numerada li::before { content: counter(n); flex: none; width: 2rem; height: 2rem; border-radius: 50%; background: var(--thc-verde-oscuro); color: var(--thc-lima); display: flex; align-items: center; justify-content: center; font-size: 0.95rem; }
+
+/* Saltos de línea: los títulos se reparten en líneas equilibradas (no queda una palabra suelta)
+   y .nb mantiene unida una expresión, p. ej. <span class="nb">¿Y el valor?</span>.
+   Para que la segunda parte del título vaya entera a la segunda línea: <span class="linea">¿Y el valor?</span> */
+.slidev-layout h1, .slidev-layout h2, .slidev-layout h3 { text-wrap: balance; }
+.slidev-layout p, .slidev-layout li { text-wrap: pretty; }
+.nb { white-space: nowrap; }
+/* .linea fuerza que la frase empiece en una línea nueva (la pregunta de un título, por ejemplo) */
+.linea { display: block; }
+
+/* Ritmo vertical (un solo sistema para todas las slides)
+   - título → contenido: 1.5rem; entre bloques: 1rem a 1.3rem; notas y fuentes: 1.3rem sobre lo anterior.
+   - los márgenes entre bloques se colapsan, así que un margin-top en línea más pequeño no encoge este mínimo.
+   - Texto corrido en dos columnas o listas largas: .denso reduce un punto el cuerpo en lugar de apretar los espacios. */
+.slidev-layout h1 + p, .slidev-layout h1 + div, .slidev-layout h1 + table { margin-top: 0; }
+.slidev-layout p { margin: 0 0 0.9rem; }
+.slidev-layout ul, .slidev-layout ol { margin: 0 0 1rem; }
+.slidev-layout li { margin: 0.35rem 0; }
+.slidev-layout .tarjeta + .tarjeta { margin-top: 0.8rem; }
+.slidev-layout .tarjeta p:last-child { margin-bottom: 0; }
+.denso p, .denso li { font-size: 0.95rem; line-height: 1.4; }
+
+/* Patrones reutilizables (antes eran HTML en línea en las secciones de DPM)
+   .cifras > .cifra   cifras grandes (1 a 3)       .cadena > .eslabon + .flecha   proceso lineal; .roto marca el eslabón que falla
+   .cascada > .et + .fila   niveles con etiqueta a la izquierda (visión → estrategia → …); .fila.actual resalta uno */
+.cifras { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.2rem; }
+.cifra { background: var(--thc-verde-oscuro); color: var(--thc-blanco); border-radius: 18px; padding: 1.4rem 1.6rem; }
+.cifra .num { display: block; font-size: 3.6rem; font-weight: 700; line-height: 1; color: var(--thc-lima); margin: 0.3rem 0 0.6rem; }
+.cifra p { margin: 0; font-size: 0.95rem; }
+.cifra.rosa .num { color: var(--thc-rosa); }
+.cadena { display: flex; align-items: stretch; gap: 0.6rem; }
+.cadena .eslabon { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--thc-verde-claro); border-radius: 14px; padding: 1.1rem 0.8rem; font-weight: 700; font-size: 1rem; color: var(--thc-verde-oscuro); }
+.cadena .eslabon.roto { background: var(--thc-blanco); color: var(--thc-rosa); box-shadow: inset 0 0 0 2px var(--thc-rosa); border-radius: 14px; }
+.cadena .flecha { align-self: center; color: var(--thc-gris-medio); font-size: 1.4rem; }
+.cadena .flecha.roto { color: var(--thc-rosa); }
+.cascada { display: grid; grid-template-columns: max-content 1fr; gap: 0.6rem 1.6rem; align-items: center; }
+.cascada .et { font-family: var(--thc-mono); text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.04em; color: var(--thc-gris-medio); }
+.cascada .fila { background: var(--thc-gris-sutil); border-radius: 14px; padding: 0.75rem 1.2rem; font-weight: 600; }
+.cascada .fila.actual { background: var(--thc-verde-claro); box-shadow: inset 0 0 0 2px var(--thc-lima); }
+.cascada .fila.oscura { background: var(--thc-verde-oscuro); color: var(--thc-blanco); font-weight: 500; }
+
+/* Tarjetas grandes: cuando una slide tiene pocas tarjetas (2 a 4), que llenen la slide en vez de quedarse pequeñas arriba */
+.grande { margin-top: 1.4rem; }
+.grande .tarjeta { font-size: 1.05rem; line-height: 1.45; padding: 1.5rem 1.6rem; }
+.grande .tarjeta strong:first-child, .grande .tarjeta h4 { font-size: 1.3rem; margin-bottom: 0.6rem; }
+.grande.dos, .grande.tres { align-items: stretch; }
